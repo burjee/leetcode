@@ -41,3 +41,5 @@
 [73](https://leetcode.com/problems/set-matrix-zeroes) Set Matrix Zeroes
 
 [76](https://leetcode.com/problems/minimum-window-substring) Minimum Window Substring
+
+[79](https://leetcode.com/problems/word-search/) Word Search
