@@ -14,7 +14,10 @@ impl ListNode {
 struct Solution {}
 impl Solution {
     pub fn remove_nth_from_end(head: Option<Box<ListNode>>, n: i32) -> Option<Box<ListNode>> {
-        let mut hair = Some(Box::new(ListNode::new(-1)));
+        let mut hair = Some(Box::new(ListNode {
+            val: -1,
+            next: head,
+        }));
         let mut nums = Vec::new();
         let mut node_n = 0;
         for _ in 0..n {
