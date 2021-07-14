@@ -55,3 +55,5 @@
 [100](https://leetcode.com/problems/same-tree) Same Tree
 
 [102](https://leetcode.com/problems/binary-tree-level-order-traversal) Binary Tree Level Order Traversal
+
+[104](https://leetcode.com/problems/maximum-depth-of-binary-tree) Maximum Depth of Binary Tree
