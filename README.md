@@ -69,3 +69,5 @@
 [124](https://leetcode.com/problems/binary-tree-maximum-path-sum) Binary Tree Maximum Path Sum
 
 [125](https://leetcode.com/problems/valid-palindrome) Valid Palindrome
+
+[128](https://leetcode.com/problems/longest-consecutive-sequence) Longest Consecutive Sequence
