@@ -25,7 +25,7 @@ impl Solution {
             return b;
         }
 
-        for right in left + 1..s.len() + 1 {
+        for right in left + 1..=s.len() {
             if set.contains(&s[left..right]) && Solution::helper(s, right, set, cache) {
                 return true;
             }

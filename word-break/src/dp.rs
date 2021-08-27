@@ -11,10 +11,11 @@ impl Solution {
         let mut arrival = vec![false; s.len() + 1];
         arrival[0] = true;
 
-        for right in 1..s.len() + 1 {
+        for right in 1..=s.len() {
             for left in 0..right {
                 if arrival[left] && set.contains(&s[left..right]) {
                     arrival[right] = true;
+                    break;
                 }
             }
         }
