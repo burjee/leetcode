@@ -71,3 +71,5 @@
 [125](https://leetcode.com/problems/valid-palindrome) Valid Palindrome
 
 [128](https://leetcode.com/problems/longest-consecutive-sequence) Longest Consecutive Sequence
+
+[139](https://leetcode.com/problems/word-break) Word Break
