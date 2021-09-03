@@ -79,3 +79,6 @@
 [152](https://leetcode.com/problems/maximum-product-subarray) Maximum Product Subarray
 
 [153](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array) Find Minimum in Rotated Sorted Array
+
+[190](https://leetcode.com/problems/reverse-bits) Reverse Bits
+
