@@ -88,6 +88,8 @@
 
 [200](https://leetcode.com/problems/number-of-islands) Number of Islands
 
+[203](https://leetcode.com/problems/remove-linked-list-elements) Remove Linked List Elements
+
 [206](https://leetcode.com/problems/reverse-linked-list) Reverse Linked List
 
 [207](https://leetcode.com/problems/course-schedule) Course Schedule
