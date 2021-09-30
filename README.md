@@ -107,3 +107,5 @@
 [217](https://leetcode.com/problems/contains-duplicate) Contains Duplicate
 
 [226](https://leetcode.com/problems/invert-binary-tree) Invert Binary Tree
+
+[230](https://leetcode.com/problems/kth-smallest-element-in-a-bst) Kth Smallest Element in a BST
