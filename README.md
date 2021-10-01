@@ -109,3 +109,5 @@
 [226](https://leetcode.com/problems/invert-binary-tree) Invert Binary Tree
 
 [230](https://leetcode.com/problems/kth-smallest-element-in-a-bst) Kth Smallest Element in a BST
+
+[235](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree) Lowest Common Ancestor of a Binary Search Tree
