@@ -117,3 +117,5 @@
 [242](https://leetcode.com/problems/valid-anagram) Valid Anagram
 
 [268](https://leetcode.com/problems/missing-number) Missing Number
+
+[295](https://leetcode.com/problems/find-median-from-data-stream) Find Median from Data Stream
