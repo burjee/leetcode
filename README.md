@@ -123,3 +123,5 @@
 [268](https://leetcode.com/problems/missing-number) Missing Number
 
 [295](https://leetcode.com/problems/find-median-from-data-stream) Find Median from Data Stream
+
+[297](https://leetcode.com/problems/serialize-and-deserialize-binary-tree) Serialize and Deserialize Binary Tree
