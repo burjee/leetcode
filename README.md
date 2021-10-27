@@ -125,3 +125,5 @@
 [295](https://leetcode.com/problems/find-median-from-data-stream) Find Median from Data Stream
 
 [297](https://leetcode.com/problems/serialize-and-deserialize-binary-tree) Serialize and Deserialize Binary Tree
+
+[300](https://leetcode.com/problems/longest-increasing-subsequence) Longest Increasing Subsequence
