@@ -134,6 +134,8 @@
 
 [322](https://leetcode.com/problems/coin-change) Coin Change
 
+[338](https://leetcode.com/problems/counting-bits) Counting Bits
+
 [404](https://leetcode.com/problems/sum-of-left-leaves) Sum of Left Leaves
 
 [441](https://leetcode.com/problems/arranging-coins) Arranging Coins
