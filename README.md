@@ -138,6 +138,8 @@
 
 [338](https://leetcode.com/problems/counting-bits) Counting Bits
 
+[347](https://leetcode.com/problems/top-k-frequent-elements) Top K Frequent Elements
+
 [404](https://leetcode.com/problems/sum-of-left-leaves) Sum of Left Leaves
 
 [441](https://leetcode.com/problems/arranging-coins) Arranging Coins
