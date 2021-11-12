@@ -149,3 +149,5 @@
 [441](https://leetcode.com/problems/arranging-coins) Arranging Coins
 
 [980](https://leetcode.com/problems/unique-paths-iii) Unique Paths III
+
+[1413](https://leetcode.com/problems/minimum-value-to-get-positive-step-by-step-sum) Minimum Value to Get Positive Step by Step Sum
