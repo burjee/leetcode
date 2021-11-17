@@ -42,6 +42,8 @@
 
 [62](https://leetcode.com/problems/unique-paths) Unique Paths
 
+[67](https://leetcode.com/problems/add-binary) Add Binary
+
 [70](https://leetcode.com/problems/climbing-stairs) Climbing Stairs
 
 [73](https://leetcode.com/problems/set-matrix-zeroes) Set Matrix Zeroes
