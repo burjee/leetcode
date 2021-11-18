@@ -86,6 +86,8 @@
 
 [130](https://leetcode.com/problems/surrounded-regions) Surrounded Regions
 
+[136](https://leetcode.com/problems/single-number) Single Number
+
 [139](https://leetcode.com/problems/word-break) Word Break
 
 [143](https://leetcode.com/problems/reorder-list) Reorder List
