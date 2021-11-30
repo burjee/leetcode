@@ -156,6 +156,8 @@
 
 [417](https://leetcode.com/problems/pacific-atlantic-water-flow) Pacific Atlantic Water Flow
 
+[424](https://leetcode.com/problems/longest-repeating-character-replacement) Longest Repeating Character Replacement
+
 [441](https://leetcode.com/problems/arranging-coins) Arranging Coins
 
 [540](https://leetcode.com/problems/single-element-in-a-sorted-array) Single Element in a Sorted Array
