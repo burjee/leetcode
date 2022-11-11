@@ -6,6 +6,8 @@
 
 [5](https://leetcode.com/problems/longest-palindromic-substring) Longest Palindromic Substring
 
+[9](https://leetcode.com/problems/palindrome-number) Palindrome Number
+
 [11](https://leetcode.com/problems/container-with-most-water) Container With Most Water
 
 [13](https://leetcode.com/problems/roman-to-integer) Roman to Integer
