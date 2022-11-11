@@ -40,6 +40,8 @@
 
 [57](https://leetcode.com/problems/insert-interval) Insert Interval
 
+[58](https://leetcode.com/problems/length-of-last-word) Length of Last Word
+
 [62](https://leetcode.com/problems/unique-paths) Unique Paths
 
 [67](https://leetcode.com/problems/add-binary) Add Binary
