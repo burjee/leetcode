@@ -176,4 +176,6 @@
 
 [980](https://leetcode.com/problems/unique-paths-iii) Unique Paths III
 
+[1048](https://leetcode.com/problems/longest-string-chain) Longest String Chain
+
 [1413](https://leetcode.com/problems/minimum-value-to-get-positive-step-by-step-sum) Minimum Value to Get Positive Step by Step Sum
