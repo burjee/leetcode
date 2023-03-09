@@ -174,6 +174,8 @@
 
 [658](https://leetcode.com/problems/find-k-closest-elements) Find K Closest Elements
 
+[872](https://leetcode.com/problems/leaf-similar-trees) Leaf-Similar Trees
+
 [938](https://leetcode.com/problems/range-sum-of-bst) Range Sum of BST
 
 [980](https://leetcode.com/problems/unique-paths-iii) Unique Paths III
