@@ -56,6 +56,8 @@
 
 [79](https://leetcode.com/problems/word-search) Word Search
 
+[88](https://leetcode.com/problems/merge-sorted-array) Merge Sorted Array
+
 [91](https://leetcode.com/problems/decode-ways) Decode Ways
 
 [92](https://leetcode.com/problems/reverse-linked-list-ii) Reverse Linked List II
