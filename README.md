@@ -190,6 +190,8 @@
 
 [1026](https://leetcode.com/problems/maximum-difference-between-node-and-ancestor) Maximum Difference Between Node and Ancestor
 
+[1046](https://leetcode.com/problems/last-stone-weight/description) Last Stone Weight
+
 [1048](https://leetcode.com/problems/longest-string-chain) Longest String Chain
 
 [1413](https://leetcode.com/problems/minimum-value-to-get-positive-step-by-step-sum) Minimum Value to Get Positive Step by Step Sum
