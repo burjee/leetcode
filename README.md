@@ -102,6 +102,8 @@
 
 [153](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array) Find Minimum in Rotated Sorted Array
 
+[168](https://leetcode.com/problems/excel-sheet-column-title) Excel Sheet Column Title
+
 [190](https://leetcode.com/problems/reverse-bits) Reverse Bits
 
 [191](https://leetcode.com/problems/number-of-1-bits) Number of 1 Bits
@@ -190,7 +192,7 @@
 
 [1026](https://leetcode.com/problems/maximum-difference-between-node-and-ancestor) Maximum Difference Between Node and Ancestor
 
-[1046](https://leetcode.com/problems/last-stone-weight/description) Last Stone Weight
+[1046](https://leetcode.com/problems/last-stone-weight) Last Stone Weight
 
 [1048](https://leetcode.com/problems/longest-string-chain) Longest String Chain
 
