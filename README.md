@@ -199,3 +199,5 @@
 [1413](https://leetcode.com/problems/minimum-value-to-get-positive-step-by-step-sum) Minimum Value to Get Positive Step by Step Sum
 
 [1657](https://leetcode.com/problems/determine-if-two-strings-are-close) Determine if Two Strings Are Close
+
+[2336](https://leetcode.com/problems/smallest-number-in-infinite-set) Smallest Number in Infinite Set
