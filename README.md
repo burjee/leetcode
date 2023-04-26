@@ -140,6 +140,8 @@
 
 [242](https://leetcode.com/problems/valid-anagram) Valid Anagram
 
+[258](https://leetcode.com/problems/add-digits) Add Digits
+
 [260](https://leetcode.com/problems/single-number-iii) Single Number III
 
 [268](https://leetcode.com/problems/missing-number) Missing Number
