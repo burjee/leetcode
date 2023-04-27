@@ -152,6 +152,8 @@
 
 [300](https://leetcode.com/problems/longest-increasing-subsequence) Longest Increasing Subsequence
 
+[319](https://leetcode.com/problems/bulb-switcher) Bulb Switcher
+
 [322](https://leetcode.com/problems/coin-change) Coin Change
 
 [338](https://leetcode.com/problems/counting-bits) Counting Bits
