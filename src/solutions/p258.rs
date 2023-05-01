@@ -10,14 +10,14 @@ impl Solution {
         }
     }
 
-    pub fn add_digits1(mut num: i32) -> i32 {
+    pub fn _add_digits1(mut num: i32) -> i32 {
         while num > 9 {
             num = num % 10 + num / 10;
         }
         num
     }
 
-    pub fn add_digits2(mut num: i32) -> i32 {
+    pub fn _add_digits2(mut num: i32) -> i32 {
         while num > 9 {
             let mut temp = 0;
             while num > 0 {
