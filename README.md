@@ -18,6 +18,8 @@ cargo run <problem_number>
 
 [13](https://leetcode.com/problems/roman-to-integer) Roman to Integer
 
+[14](https://leetcode.com/problems/longest-common-prefix) Longest Common Prefix
+
 [15](https://leetcode.com/problems/3sum) 3Sum
 
 [17](https://leetcode.com/problems/letter-combinations-of-a-phone-number) Letter Combinations of a Phone Number

@@ -19,6 +19,7 @@ pub mod p13;
 pub mod p130;
 pub mod p136;
 pub mod p139;
+pub mod p14;
 pub mod p1413;
 pub mod p143;
 pub mod p15;
@@ -112,6 +113,7 @@ pub fn run(n: &str) {
         "9" => p9::run(),
         "11" => p11::run(),
         "13" => p13::run(),
+        "14" => p14::run(),
         "15" => p15::run(),
         "17" => p17::run(),
         "19" => p19::run(),
