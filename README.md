@@ -1,3 +1,9 @@
+### RUN
+```bash
+cargo run <problem_number>
+```
+
+
 [1](https://leetcode.com/problems/two-sum) Two Sum
 
 [2](https://leetcode.com/problems/add-two-numbers) Add Two Numbers
