@@ -10,7 +10,7 @@ impl Solution {
         output
     }
 
-    pub fn convert_to_title2(column_number: i32) -> String {
+    pub fn _convert_to_title2(column_number: i32) -> String {
         let mut column_number = column_number as usize;
         let column = [
             'Z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P',
