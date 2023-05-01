@@ -6,7 +6,7 @@ impl Solution {
     }
 
     // Time Limit Exceeded
-    pub fn bulb_switch1(n: i32) -> i32 {
+    pub fn _bulb_switch1(n: i32) -> i32 {
         let n = n as usize;
         let mut b = vec![true; n];
         for i in 1..n {
