@@ -214,4 +214,6 @@ cargo run <problem_number>
 
 [1657](https://leetcode.com/problems/determine-if-two-strings-are-close) Determine if Two Strings Are Close
 
+[1822](https://leetcode.com/problems/sign-of-the-product-of-an-array) Sign of the Product of an Array
+
 [2336](https://leetcode.com/problems/smallest-number-in-infinite-set) Smallest Number in Infinite Set
