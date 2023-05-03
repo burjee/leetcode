@@ -216,4 +216,6 @@ cargo run <problem_number>
 
 [1822](https://leetcode.com/problems/sign-of-the-product-of-an-array) Sign of the Product of an Array
 
+[2215](https://leetcode.com/problems/find-the-difference-of-two-arrays) Find the Difference of Two Arrays
+
 [2336](https://leetcode.com/problems/smallest-number-in-infinite-set) Smallest Number in Infinite Set
