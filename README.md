@@ -190,6 +190,8 @@ cargo run <problem_number>
 
 [647](https://leetcode.com/problems/palindromic-substrings) Palindromic Substrings
 
+[649](https://leetcode.com/problems/dota2-senate) Dota2 Senate
+
 [658](https://leetcode.com/problems/find-k-closest-elements) Find K Closest Elements
 
 [692](https://leetcode.com/problems/top-k-frequent-words) Top K Frequent Words
