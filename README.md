@@ -216,6 +216,8 @@ cargo run <problem_number>
 
 [1491](https://leetcode.com/problems/average-salary-excluding-the-minimum-and-maximum-salary) Average Salary Excluding the Minimum and Maximum Salary
 
+[1572](https://leetcode.com/problems/matrix-diagonal-sum) Matrix Diagonal Sum
+
 [1657](https://leetcode.com/problems/determine-if-two-strings-are-close) Determine if Two Strings Are Close
 
 [1822](https://leetcode.com/problems/sign-of-the-product-of-an-array) Sign of the Product of an Array
