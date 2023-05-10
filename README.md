@@ -52,6 +52,8 @@ cargo run <problem_number>
 
 [58](https://leetcode.com/problems/length-of-last-word) Length of Last Word
 
+[59](https://leetcode.com/problems/spiral-matrix-ii) Spiral Matrix II
+
 [62](https://leetcode.com/problems/unique-paths) Unique Paths
 
 [67](https://leetcode.com/problems/add-binary) Add Binary

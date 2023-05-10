@@ -89,6 +89,7 @@ pub mod p56;
 pub mod p57;
 pub mod p572;
 pub mod p58;
+pub mod p59;
 pub mod p62;
 pub mod p647;
 pub mod p649;
@@ -136,6 +137,7 @@ pub fn run(n: &str) {
         "56" => p56::run(),
         "57" => p57::run(),
         "58" => p58::run(),
+        "59" => p59::run(),
         "62" => p62::run(),
         "67" => p67::run(),
         "70" => p70::run(),
