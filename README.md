@@ -210,6 +210,8 @@ cargo run <problem_number>
 
 [1026](https://leetcode.com/problems/maximum-difference-between-node-and-ancestor) Maximum Difference Between Node and Ancestor
 
+[1035](https://leetcode.com/problems/uncrossed-lines) Uncrossed Lines
+
 [1046](https://leetcode.com/problems/last-stone-weight) Last Stone Weight
 
 [1048](https://leetcode.com/problems/longest-string-chain) Longest String Chain
