@@ -1,6 +1,7 @@
 use std::env;
 
 mod solutions;
+mod utils;
 
 fn main() {
     let args: Vec<String> = env::args().collect();

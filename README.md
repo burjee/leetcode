@@ -226,6 +226,8 @@ cargo run <problem_number>
 
 [1657](https://leetcode.com/problems/determine-if-two-strings-are-close) Determine if Two Strings Are Close
 
+[1721](https://leetcode.com/problems/swapping-nodes-in-a-linked-list) Swapping Nodes in a Linked List
+
 [1822](https://leetcode.com/problems/sign-of-the-product-of-an-array) Sign of the Product of an Array
 
 [2140](https://leetcode.com/problems/solving-questions-with-brainpower) Solving Questions With Brainpower
