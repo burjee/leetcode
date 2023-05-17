@@ -32,6 +32,8 @@ cargo run <problem_number>
 
 [23](https://leetcode.com/problems/merge-k-sorted-lists) Merge k Sorted Lists
 
+[24](https://leetcode.com/problems/swap-nodes-in-pairs) Swap Nodes in Pairs
+
 [33](https://leetcode.com/problems/search-in-rotated-sorted-array) Search in Rotated Sorted Array
 
 [39](https://leetcode.com/problems/combination-sum) Combination Sum
