@@ -232,6 +232,8 @@ cargo run <problem_number>
 
 [1822](https://leetcode.com/problems/sign-of-the-product-of-an-array) Sign of the Product of an Array
 
+[2130](https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list) Maximum Twin Sum of a Linked List
+
 [2140](https://leetcode.com/problems/solving-questions-with-brainpower) Solving Questions With Brainpower
 
 [2215](https://leetcode.com/problems/find-the-difference-of-two-arrays) Find the Difference of Two Arrays

@@ -50,6 +50,7 @@ pub mod p21;
 pub mod p211;
 pub mod p212;
 pub mod p213;
+pub mod p2130;
 pub mod p2140;
 pub mod p217;
 pub mod p2215;
@@ -233,6 +234,7 @@ pub fn run(n: &str) {
         "1721" => p1721::run(),
         "1822" => p1822::run(),
         "2215" => p2215::run(),
+        "2130" => p2130::run(),
         "2140" => p2140::run(),
         "2336" => p2336::run(),
         _ => println!("Solution not found."),
