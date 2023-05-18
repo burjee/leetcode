@@ -35,6 +35,7 @@ pub mod p168;
 pub mod p17;
 pub mod p1721;
 pub mod p1822;
+pub mod p1834;
 pub mod p19;
 pub mod p190;
 pub mod p191;
@@ -235,6 +236,7 @@ pub fn run(n: &str) {
         "1657" => p1657::run(),
         "1721" => p1721::run(),
         "1822" => p1822::run(),
+        "1834" => p1834::run(),
         "2215" => p2215::run(),
         "2130" => p2130::run(),
         "2140" => p2140::run(),
