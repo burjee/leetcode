@@ -202,6 +202,8 @@ cargo run <problem_number>
 
 [785](https://leetcode.com/problems/is-graph-bipartite) Is Graph Bipartite
 
+[797](https://leetcode.com/problems/all-paths-from-source-to-target) All Paths From Source to Target
+
 [839](https://leetcode.com/problems/similar-string-groups) Similar String Groups
 
 [872](https://leetcode.com/problems/leaf-similar-trees) Leaf-Similar Trees
