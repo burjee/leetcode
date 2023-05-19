@@ -200,6 +200,8 @@ cargo run <problem_number>
 
 [692](https://leetcode.com/problems/top-k-frequent-words) Top K Frequent Words
 
+[785](https://leetcode.com/problems/is-graph-bipartite) Is Graph Bipartite
+
 [839](https://leetcode.com/problems/similar-string-groups) Similar String Groups
 
 [872](https://leetcode.com/problems/leaf-similar-trees) Leaf-Similar Trees
