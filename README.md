@@ -34,6 +34,8 @@ cargo run <problem_number>
 
 [24](https://leetcode.com/problems/swap-nodes-in-pairs) Swap Nodes in Pairs
 
+[26](https://leetcode.com/problems/remove-duplicates-from-sorted-array) Remove Duplicates from Sorted Array
+
 [27](https://leetcode.com/problems/remove-element) Remove Element
 
 [33](https://leetcode.com/problems/search-in-rotated-sorted-array) Search in Rotated Sorted Array
