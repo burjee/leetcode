@@ -67,6 +67,7 @@ pub mod p242;
 pub mod p258;
 pub mod p260;
 pub mod p268;
+pub mod p27;
 pub mod p295;
 pub mod p297;
 pub mod p3;
@@ -138,6 +139,7 @@ pub fn run(n: &str) {
         "21" => p21::run(),
         "23" => p23::run(),
         "24" => p24::run(),
+        "27" => p27::run(),
         "33" => p33::run(),
         "39" => p39::run(),
         "48" => p48::run(),
