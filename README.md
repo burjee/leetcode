@@ -253,3 +253,5 @@ cargo run <problem_number>
 [2215](https://leetcode.com/problems/find-the-difference-of-two-arrays) Find the Difference of Two Arrays
 
 [2336](https://leetcode.com/problems/smallest-number-in-infinite-set) Smallest Number in Infinite Set
+
+[2542](https://leetcode.com/problems/maximum-subsequence-score) Maximum Subsequence Score
