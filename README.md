@@ -210,6 +210,8 @@ cargo run <problem_number>
 
 [797](https://leetcode.com/problems/all-paths-from-source-to-target) All Paths From Source to Target
 
+[837](https://leetcode.com/problems/new-21-game) New 21 Game
+
 [839](https://leetcode.com/problems/similar-string-groups) Similar String Groups
 
 [872](https://leetcode.com/problems/leaf-similar-trees) Leaf-Similar Trees
