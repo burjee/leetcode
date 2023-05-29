@@ -242,6 +242,8 @@ cargo run <problem_number>
 
 [1572](https://leetcode.com/problems/matrix-diagonal-sum) Matrix Diagonal Sum
 
+[1603](https://leetcode.com/problems/design-parking-system) Design Parking System
+
 [1657](https://leetcode.com/problems/determine-if-two-strings-are-close) Determine if Two Strings Are Close
 
 [1721](https://leetcode.com/problems/swapping-nodes-in-a-linked-list) Swapping Nodes in a Linked List
