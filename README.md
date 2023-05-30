@@ -206,6 +206,8 @@ cargo run <problem_number>
 
 [703](https://leetcode.com/problems/kth-largest-element-in-a-stream) Kth Largest Element in a Stream
 
+[705](https://leetcode.com/problems/design-hashset) Design HashSet
+
 [785](https://leetcode.com/problems/is-graph-bipartite) Is Graph Bipartite
 
 [797](https://leetcode.com/problems/all-paths-from-source-to-target) All Paths From Source to Target
