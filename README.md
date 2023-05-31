@@ -234,6 +234,8 @@ cargo run <problem_number>
 
 [1140](https://leetcode.com/problems/stone-game-ii) Stone Game II
 
+[1396](https://leetcode.com/problems/design-underground-system) Design Underground System
+
 [1413](https://leetcode.com/problems/minimum-value-to-get-positive-step-by-step-sum) Minimum Value to Get Positive Step by Step Sum
 
 [1456](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length) Maximum Number of Vowels in a Substring of Given Length
