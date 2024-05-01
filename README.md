@@ -168,6 +168,8 @@ cargo run <problem_number>
 
 [300](https://leetcode.com/problems/longest-increasing-subsequence) Longest Increasing Subsequence
 
+[310](https://leetcode.com/problems/minimum-height-trees) Minimum Height Trees
+
 [319](https://leetcode.com/problems/bulb-switcher) Bulb Switcher
 
 [322](https://leetcode.com/problems/coin-change) Coin Change
