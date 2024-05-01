@@ -200,6 +200,8 @@ cargo run <problem_number>
 
 [572](https://leetcode.com/problems/subtree-of-another-tree) Subtree of Another Tree
 
+[623](https://leetcode.com/problems/add-one-row-to-tree) Add One Row to Tree
+
 [647](https://leetcode.com/problems/palindromic-substrings) Palindromic Substrings
 
 [649](https://leetcode.com/problems/dota2-senate) Dota2 Senate
