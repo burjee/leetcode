@@ -182,6 +182,8 @@ cargo run <problem_number>
 
 [371](https://leetcode.com/problems/sum-of-two-integers) Sum of Two Integers
 
+[380](https://leetcode.com/problems/insert-delete-getrandom-o1) Insert Delete GetRandom O(1)
+
 [402](https://leetcode.com/problems/remove-k-digits) Remove K Digits
 
 [404](https://leetcode.com/problems/sum-of-left-leaves) Sum of Left Leaves
