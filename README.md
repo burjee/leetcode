@@ -277,3 +277,5 @@ cargo run <problem_number>
 [2336](https://leetcode.com/problems/smallest-number-in-infinite-set) Smallest Number in Infinite Set
 
 [2542](https://leetcode.com/problems/maximum-subsequence-score) Maximum Subsequence Score
+
+[3075](https://leetcode.com/problems/maximize-happiness-of-selected-children) Maximize Happiness of Selected Children
