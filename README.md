@@ -198,6 +198,8 @@ cargo run <problem_number>
 
 [461](https://leetcode.com/problems/hamming-distance) Hamming Distance
 
+[506](https://leetcode.com/problems/relative-ranks) Relative Ranks
+
 [540](https://leetcode.com/problems/single-element-in-a-sorted-array) Single Element in a Sorted Array
 
 [572](https://leetcode.com/problems/subtree-of-another-tree) Subtree of Another Tree
