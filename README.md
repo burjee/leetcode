@@ -240,6 +240,8 @@ cargo run <problem_number>
 
 [1048](https://leetcode.com/problems/longest-string-chain) Longest String Chain
 
+[1091](https://leetcode.com/problems/shortest-path-in-binary-matrix) Shortest Path in Binary Matrix
+
 [1140](https://leetcode.com/problems/stone-game-ii) Stone Game II
 
 [1396](https://leetcode.com/problems/design-underground-system) Design Underground System
