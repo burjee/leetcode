@@ -85,6 +85,7 @@ pub fn run() {
         vec![vec![1, 3], vec![0, 2], vec![1, 3], vec![0, 2]],
         vec![vec![1], vec![0], vec![3], vec![2]],
     ];
+
     for graph in input {
         println!("{:?}", Solution::is_bipartite(graph));
     }

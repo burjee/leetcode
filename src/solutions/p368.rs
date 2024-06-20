@@ -33,12 +33,13 @@ impl Solution {
 }
 
 pub fn run() {
-    let input = vec![
+    let input = [
         vec![1, 2, 3],
         vec![1, 2, 4, 8],
         vec![1, 2, 3, 6, 8, 9, 12, 15, 16, 18],
         vec![2, 6, 33, 66],
     ];
+
     for nums in input {
         println!("{:?}", Solution::largest_divisible_subset(nums));
     }

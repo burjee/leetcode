@@ -42,7 +42,7 @@ impl Solution {
 }
 
 pub fn run() {
-    let input = vec![
+    let input = [
         vec![
             vec![-4, -2147483648, 6, -7, 0],
             vec![-8, 6, -8, -6, 0],
@@ -53,7 +53,7 @@ pub fn run() {
     ];
 
     for mut matrix in input {
-        Solution::set_zeroes(matrix.as_mut());
-        println!("ans: {:?}", matrix);
+        Solution::set_zeroes(&mut matrix);
+        println!("{:?}", matrix);
     }
 }

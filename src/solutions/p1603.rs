@@ -29,12 +29,12 @@ impl ParkingSystem {
  * let ret_1: bool = obj.add_car(carType);
  */
 
-enum Cmd {
-    Init { big: i32, medium: i32, small: i32 },
-    Add(i32),
-}
-
 pub fn run() {
+    enum Cmd {
+        Init { big: i32, medium: i32, small: i32 },
+        Add(i32),
+    }
+
     let input = [
         Cmd::Init {
             big: 1,
@@ -46,6 +46,7 @@ pub fn run() {
         Cmd::Add(3),
         Cmd::Add(1),
     ];
+
     let mut parking_system = ParkingSystem::new(-1, -1, -1);
     for cmd in input {
         match cmd {

@@ -27,14 +27,9 @@ impl Solution {
 }
 
 pub fn run() {
-    let input = vec![
-        "III".to_string(),
-        "IV".to_string(),
-        "IX".to_string(),
-        "LVIII".to_string(),
-        "MCMXCIV".to_string(),
-    ];
+    let input = ["III", "IV", "IX", "LVIII", "MCMXCIV"];
+
     for s in input {
-        println!("{}", Solution::roman_to_int(s));
+        println!("{}", Solution::roman_to_int(s.to_string()));
     }
 }

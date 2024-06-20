@@ -15,7 +15,7 @@ impl Solution {
 }
 
 pub fn run() {
-    let input = vec![
+    let input = [
         vec![1, 2],
         vec![-2, -1],
         vec![-2, 1, -3, 4, -1, 2, 1, -5, 4],
@@ -26,6 +26,6 @@ pub fn run() {
     ];
 
     for nums in input {
-        println!("ans: {}", Solution::max_sub_array(nums));
+        println!("{}", Solution::max_sub_array(nums));
     }
 }

@@ -1,3 +1,4 @@
+use crate::utils::string::strs_to_string;
 use std::collections::HashSet;
 
 struct Solution {}
@@ -37,58 +38,62 @@ impl Solution {
 }
 
 pub fn run() {
-    let input = vec![
+    let input = [
         (
-            "leetcode".to_string(),
-            vec!["leet".to_string(), "code".to_string()],
+            "leetcode",
+            vec!["leet", "code"],
         ),
         (
-            "applepenapple".to_string(),
-            vec!["apple".to_string(), "pen".to_string()],
+            "applepenapple",
+            vec!["apple", "pen"],
         ),
         (
-            "catsandog".to_string(),
+            "catsandog",
             vec![
-                "cats".to_string(),
-                "dog".to_string(),
-                "sand".to_string(),
-                "and".to_string(),
-                "cat".to_string(),
+                "cats",
+                "dog",
+                "sand",
+                "and",
+                "cat",
             ],
         ),
         (
-            "catscatsing".to_string(),
-            vec!["cats".to_string(), "cat".to_string(), "sing".to_string()],
+            "catscatsing",
+            vec!["cats", "cat", "sing"],
         ),
         (
-            "aaabbbc".to_string(),
-            vec!["aaa".to_string(), "bbb".to_string()],
+            "aaabbbc",
+            vec!["aaa", "bbb"],
         ),
         (
-            "cacacacat".to_string(),
-            vec!["ca".to_string(), "cat".to_string()],
+            "cacacacat",
+            vec!["ca", "cat"],
         ),
-        ("ca".to_string(), vec!["cagg".to_string()]),
+        ("ca", vec!["cagg"]),
         (
-            "bb".to_string(),
+            "bb",
             vec![
-                "a".to_string(),
-                "b".to_string(),
-                "bbb".to_string(),
-                "bbbb".to_string(),
+                "a",
+                "b",
+                "bbb",
+                "bbbb",
             ],
         ),
         (
-            "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab".to_string(),
-            vec!["a".to_string(),"aa".to_string(),"aaa".to_string(),"aaaa".to_string(),"aaaaa".to_string(),"aaaaaa".to_string(),"aaaaaaa".to_string(),"aaaaaaaa".to_string(),"aaaaaaaaa".to_string(),"aaaaaaaaaa".to_string()]
+            "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab",
+            vec!["a","aa","aaa","aaaa","aaaaa","aaaaaa","aaaaaaa","aaaaaaaa","aaaaaaaaa","aaaaaaaaaa"]
         ),
         (
-            "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa".to_string(),
-            vec!["a".to_string(),"aa".to_string(),"aaa".to_string(),"aaaa".to_string(),"aaaaa".to_string(),"aaaaaa".to_string(),"aaaaaaa".to_string(),"aaaaaaaa".to_string(),"aaaaaaaaa".to_string(),"aaaaaaaaaa".to_string()]
+            "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            vec!["a","aa","aaa","aaaa","aaaaa","aaaaaa","aaaaaaa","aaaaaaaa","aaaaaaaaa","aaaaaaaaaa"]
         )
     ];
+
     for (s, word_dict) in input {
-        println!("{}", Solution::word_break(s, word_dict));
+        println!(
+            "{}",
+            Solution::word_break(s.to_string(), strs_to_string(word_dict))
+        );
     }
 }
 
@@ -120,58 +125,62 @@ impl Solution {
 }
 
 pub fn run() {
-    let input = vec![
+    let input = [
         (
-            "leetcode".to_string(),
-            vec!["leet".to_string(), "code".to_string()],
+            "leetcode",
+            vec!["leet", "code"],
         ),
         (
-            "applepenapple".to_string(),
-            vec!["apple".to_string(), "pen".to_string()],
+            "applepenapple",
+            vec!["apple", "pen"],
         ),
         (
-            "catsandog".to_string(),
+            "catsandog",
             vec![
-                "cats".to_string(),
-                "dog".to_string(),
-                "sand".to_string(),
-                "and".to_string(),
-                "cat".to_string(),
+                "cats",
+                "dog",
+                "sand",
+                "and",
+                "cat",
             ],
         ),
         (
-            "catscatsing".to_string(),
-            vec!["cats".to_string(), "cat".to_string(), "sing".to_string()],
+            "catscatsing",
+            vec!["cats", "cat", "sing"],
         ),
         (
-            "aaabbbc".to_string(),
-            vec!["aaa".to_string(), "bbb".to_string()],
+            "aaabbbc",
+            vec!["aaa", "bbb"],
         ),
         (
-            "cacacacat".to_string(),
-            vec!["ca".to_string(), "cat".to_string()],
+            "cacacacat",
+            vec!["ca", "cat"],
         ),
-        ("ca".to_string(), vec!["cagg".to_string()]),
+        ("ca", vec!["cagg"]),
         (
-            "bb".to_string(),
+            "bb",
             vec![
-                "a".to_string(),
-                "b".to_string(),
-                "bbb".to_string(),
-                "bbbb".to_string(),
+                "a",
+                "b",
+                "bbb",
+                "bbbb",
             ],
         ),
         (
-            "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab".to_string(),
-            vec!["a".to_string(),"aa".to_string(),"aaa".to_string(),"aaaa".to_string(),"aaaaa".to_string(),"aaaaaa".to_string(),"aaaaaaa".to_string(),"aaaaaaaa".to_string(),"aaaaaaaaa".to_string(),"aaaaaaaaaa".to_string()]
+            "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab",
+            vec!["a","aa","aaa","aaaa","aaaaa","aaaaaa","aaaaaaa","aaaaaaaa","aaaaaaaaa","aaaaaaaaaa"]
         ),
         (
-            "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa".to_string(),
-            vec!["a".to_string(),"aa".to_string(),"aaa".to_string(),"aaaa".to_string(),"aaaaa".to_string(),"aaaaaa".to_string(),"aaaaaaa".to_string(),"aaaaaaaa".to_string(),"aaaaaaaaa".to_string(),"aaaaaaaaaa".to_string()]
+            "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            vec!["a","aa","aaa","aaaa","aaaaa","aaaaaa","aaaaaaa","aaaaaaaa","aaaaaaaaa","aaaaaaaaaa"]
         )
     ];
+
     for (s, word_dict) in input {
-        println!("{}", Solution::word_break(s, word_dict));
+        println!(
+            "{}",
+            Solution::word_break(s.to_string(), strs_to_string(word_dict))
+        );
     }
 }
  */

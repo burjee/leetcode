@@ -40,62 +40,65 @@ impl UndergroundSystem {
  * let ret_3: f64 = obj.get_average_time(startStation, endStation);
  */
 
-enum Call {
-    Init,
-    CheckIn(i32, String, i32),
-    CheckOut(i32, String, i32),
-    GetAverageTime(String, String),
-}
-
 pub fn run() {
+    enum Cmd<'a> {
+        Init,
+        CheckIn(i32, &'a str, i32),
+        CheckOut(i32, &'a str, i32),
+        GetAverageTime(&'a str, &'a str),
+    }
+
     let input = [
         vec![
-            Call::Init,
-            Call::CheckIn(45, "Leyton".into(), 3),
-            Call::CheckIn(32, "Paradise".into(), 8),
-            Call::CheckIn(27, "Leyton".into(), 10),
-            Call::CheckOut(45, "Waterloo".into(), 15),
-            Call::CheckOut(27, "Waterloo".into(), 20),
-            Call::CheckOut(32, "Cambridge".into(), 22),
-            Call::GetAverageTime("Paradise".into(), "Cambridge".into()),
-            Call::GetAverageTime("Leyton".into(), "Waterloo".into()),
-            Call::CheckIn(10, "Leyton".into(), 24),
-            Call::GetAverageTime("Leyton".into(), "Waterloo".into()),
-            Call::CheckOut(10, "Waterloo".into(), 38),
-            Call::GetAverageTime("Leyton".into(), "Waterloo".into()),
+            Cmd::Init,
+            Cmd::CheckIn(45, "Leyton", 3),
+            Cmd::CheckIn(32, "Paradise", 8),
+            Cmd::CheckIn(27, "Leyton", 10),
+            Cmd::CheckOut(45, "Waterloo", 15),
+            Cmd::CheckOut(27, "Waterloo", 20),
+            Cmd::CheckOut(32, "Cambridge", 22),
+            Cmd::GetAverageTime("Paradise", "Cambridge"),
+            Cmd::GetAverageTime("Leyton", "Waterloo"),
+            Cmd::CheckIn(10, "Leyton", 24),
+            Cmd::GetAverageTime("Leyton", "Waterloo"),
+            Cmd::CheckOut(10, "Waterloo", 38),
+            Cmd::GetAverageTime("Leyton", "Waterloo"),
         ],
         vec![
-            Call::Init,
-            Call::CheckIn(10, "Leyton".into(), 3),
-            Call::CheckOut(10, "Paradise".into(), 8),
-            Call::GetAverageTime("Leyton".into(), "Paradise".into()),
-            Call::CheckIn(5, "Leyton".into(), 10),
-            Call::CheckOut(5, "Paradise".into(), 16),
-            Call::GetAverageTime("Leyton".into(), "Paradise".into()),
-            Call::CheckIn(2, "Leyton".into(), 21),
-            Call::CheckOut(2, "Paradise".into(), 30),
-            Call::GetAverageTime("Leyton".into(), "Paradise".into()),
+            Cmd::Init,
+            Cmd::CheckIn(10, "Leyton", 3),
+            Cmd::CheckOut(10, "Paradise", 8),
+            Cmd::GetAverageTime("Leyton", "Paradise"),
+            Cmd::CheckIn(5, "Leyton", 10),
+            Cmd::CheckOut(5, "Paradise", 16),
+            Cmd::GetAverageTime("Leyton", "Paradise"),
+            Cmd::CheckIn(2, "Leyton", 21),
+            Cmd::CheckOut(2, "Paradise", 30),
+            Cmd::GetAverageTime("Leyton", "Paradise"),
         ],
     ];
 
     let mut system = UndergroundSystem::new();
-    for calls in input {
-        for call in calls {
-            match call {
-                Call::Init => {
+    for commands in input {
+        for cmd in commands {
+            match cmd {
+                Cmd::Init => {
                     system = UndergroundSystem::new();
                     print!("null, ");
                 }
-                Call::CheckIn(id, station_name, t) => {
-                    system.check_in(id, station_name, t);
+                Cmd::CheckIn(id, station_name, t) => {
+                    system.check_in(id, station_name.to_string(), t);
                     print!("null, ");
                 }
-                Call::CheckOut(id, station_name, t) => {
-                    system.check_out(id, station_name, t);
+                Cmd::CheckOut(id, station_name, t) => {
+                    system.check_out(id, station_name.to_string(), t);
                     print!("null, ");
                 }
-                Call::GetAverageTime(start_station, end_station) => {
-                    print!("{}, ", system.get_average_time(start_station, end_station));
+                Cmd::GetAverageTime(start_station, end_station) => {
+                    print!(
+                        "{}, ",
+                        system.get_average_time(start_station.to_string(), end_station.to_string())
+                    );
                 }
             }
         }

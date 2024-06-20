@@ -26,9 +26,10 @@ impl Solution {
 }
 
 pub fn run() {
-    let input = vec![
+    let input = [
         19, 2, 20, 56, 99, 75, 185616531, 486486465, 864148, 68189614, 412848, 17, 107, 4185, 10,
     ];
+
     for n in input {
         println!("{}", Solution::is_happy(n));
     }

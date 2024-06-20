@@ -18,13 +18,10 @@ impl Solution {
 }
 
 pub fn run() {
-    let input = vec![
-        ("anagram".to_string(), "nagaram".to_string()),
-        ("rat".to_string(), "car".to_string()),
-        ("asdfg".to_string(), "gfasd".to_string()),
-    ];
+    let input = [("anagram", "nagaram"), ("rat", "car"), ("asdfg", "gfasd")];
+
     for (s, t) in input {
-        println!("{}", Solution::is_anagram(s, t));
+        println!("{}", Solution::is_anagram(s.to_string(), t.to_string()));
     }
 }
 
@@ -45,11 +42,12 @@ impl Solution {
 }
 
 pub fn run() {
-    let input = vec![
+    let input = [
         ("anagram".to_string(), "nagaram".to_string()),
         ("rat".to_string(), "car".to_string()),
         ("asdfg".to_string(), "gfasd".to_string()),
     ];
+
     for (s, t) in input {
         println!("{}", Solution::is_anagram(s, t));
     }

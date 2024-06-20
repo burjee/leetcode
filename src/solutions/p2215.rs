@@ -25,11 +25,12 @@ impl Solution {
 }
 
 pub fn run() {
-    let inputs = [
+    let input = [
         (vec![1, 2, 3], vec![2, 4, 6]),
         (vec![1, 2, 3, 3], vec![1, 1, 2, 2]),
     ];
-    for (nums1, nums2) in inputs {
+
+    for (nums1, nums2) in input {
         println!("{:?}", Solution::find_difference(nums1, nums2));
     }
 }

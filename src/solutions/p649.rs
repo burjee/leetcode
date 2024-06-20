@@ -46,6 +46,7 @@ impl Solution {
 
 pub fn run() {
     let input = ["RD", "RDD", "RDDRDRRDRDRDDDRDRRDRDRDDDRDR"];
+
     for senate in input {
         println!("{}", Solution::predict_party_victory(senate.to_string()));
     }

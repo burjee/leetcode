@@ -25,18 +25,19 @@ impl Solution {
 }
 
 pub fn run() {
-    let input = vec![
-        "abc".to_string(),
-        "aaa".to_string(),
-        "aaffifjaa".to_string(),
-        "aba".to_string(),
-        "aabbcca".to_string(),
-        "aaeeddeeaa".to_string(),
-        "aaggggaa".to_string(),
-        "abccba".to_string(),
+    let input = [
+        "abc",
+        "aaa",
+        "aaffifjaa",
+        "aba",
+        "aabbcca",
+        "aaeeddeeaa",
+        "aaggggaa",
+        "abccba",
     ];
+
     for s in input {
-        println!("{}", Solution::count_substrings(s));
+        println!("{}", Solution::count_substrings(s.to_string()));
     }
 }
 
@@ -61,19 +62,4 @@ impl Solution {
     }
 }
 
-pub fn run() {
-    let input = vec![
-        "abc".to_string(),
-        "aaa".to_string(),
-        "aaffifjaa".to_string(),
-        "aba".to_string(),
-        "aabbcca".to_string(),
-        "aaeeddeeaa".to_string(),
-        "aaggggaa".to_string(),
-        "abccba".to_string(),
-    ];
-    for s in input {
-        println!("{}", Solution::count_substrings(s));
-    }
-}
  */

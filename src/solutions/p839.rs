@@ -1,3 +1,5 @@
+use crate::utils::string::strs_to_string;
+
 struct Solution {}
 impl Solution {
     pub fn num_similar_groups(mut strs: Vec<String>) -> i32 {
@@ -42,8 +44,8 @@ impl Solution {
 
 pub fn run() {
     let input = [vec!["tars", "rats", "arts", "star"], vec!["omv", "ovm"]];
+
     for strs in input {
-        let strs = strs.into_iter().map(|s| s.to_string()).collect();
-        println!("{:?}", Solution::num_similar_groups(strs));
+        println!("{:?}", Solution::num_similar_groups(strs_to_string(strs)));
     }
 }

@@ -1,3 +1,4 @@
+use crate::utils::string::strs_to_string;
 use std::collections::HashMap;
 
 #[derive(Default)]
@@ -84,7 +85,7 @@ impl Solution {
 }
 
 pub fn run() {
-    let input = vec![
+    let input = [
         (
             vec![
                 vec!['o', 'a', 'a', 'n'],
@@ -92,16 +93,11 @@ pub fn run() {
                 vec!['i', 'h', 'k', 'r'],
                 vec!['i', 'f', 'l', 'v'],
             ],
-            vec![
-                "oath".to_string(),
-                "pea".to_string(),
-                "eat".to_string(),
-                "rain".to_string(),
-            ],
+            vec!["oath", "pea", "eat", "rain"],
         ),
         (
             vec![vec!['a', 'b'], vec!['c', 'd']],
-            vec!["abcb".to_string(), "abcd".to_string(), "abdc".to_string()],
+            vec!["abcb", "abcd", "abdc"],
         ),
         (
             vec![
@@ -110,7 +106,7 @@ pub fn run() {
                 vec!['a', 'h', 'k', 'r'],
                 vec!['a', 'f', 'l', 'v'],
             ],
-            vec!["oa".to_string(), "oaa".to_string()],
+            vec!["oa", "oaa"],
         ),
         (
             vec![
@@ -120,21 +116,13 @@ pub fn run() {
                 vec!['i', 'f', 'l', 'v'],
             ],
             vec![
-                "oath".to_string(),
-                "pea".to_string(),
-                "eat".to_string(),
-                "rain".to_string(),
-                "oathi".to_string(),
-                "oathk".to_string(),
-                "oathf".to_string(),
-                "oate".to_string(),
-                "oathii".to_string(),
-                "oathfi".to_string(),
-                "oathfii".to_string(),
+                "oath", "pea", "eat", "rain", "oathi", "oathk", "oathf", "oate", "oathii",
+                "oathfi", "oathfii",
             ],
         ),
     ];
+
     for (board, words) in input {
-        println!("{:?}", Solution::find_words(board, words));
+        println!("{:?}", Solution::find_words(board, strs_to_string(words)));
     }
 }

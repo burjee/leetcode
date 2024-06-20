@@ -48,22 +48,18 @@ impl Solution {
 }
 
 pub fn run() {
-    let input = vec![
-        to_string("cgklivwehljxrdzpfdqsapogwvjtvbzahjnsejwnuhmomlfsrvmrnczjzjevkdvroiluthhpqtffhlzyglrvorgnalk", "mqfff"),
-        to_string("bba", "ab"),
-        to_string("ab", "b"),
-        to_string("BDOAECODEBANC", "ABC"),
-        to_string("a", "a"),
-        to_string("ADOBECODENC", "ABC"),
-        to_string("ADOBECODENC", "DDD"),
-        to_string("ASSSSASSSSSBCSASSSS", "ABC"),
+    let input = [
+        ("cgklivwehljxrdzpfdqsapogwvjtvbzahjnsejwnuhmomlfsrvmrnczjzjevkdvroiluthhpqtffhlzyglrvorgnalk", "mqfff"),
+        ("bba", "ab"),
+        ("ab", "b"),
+        ("BDOAECODEBANC", "ABC"),
+        ("a", "a"),
+        ("ADOBECODENC", "ABC"),
+        ("ADOBECODENC", "DDD"),
+        ("ASSSSASSSSSBCSASSSS", "ABC"),
     ];
 
-    for s in input {
-        println!("{}", Solution::min_window(s.0, s.1));
+    for (s, t) in input {
+        println!("{}", Solution::min_window(s.to_string(), t.to_string()));
     }
-}
-
-fn to_string(s1: &str, s2: &str) -> (String, String) {
-    (String::from(s1), String::from(s2))
 }

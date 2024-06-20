@@ -12,11 +12,12 @@ impl Solution {
 }
 
 pub fn run() {
-    let input = vec![
+    let input = [
         vec![7, 1, 5, 3, 6, 4],
         vec![1, 2, 3, 4, 5],
         vec![7, 6, 4, 3, 1],
     ];
+
     for prices in input {
         println!("{}", Solution::max_profit(prices));
     }

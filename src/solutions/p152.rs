@@ -33,7 +33,7 @@ impl Solution {
 }
 
 pub fn run() {
-    let input = vec![
+    let input = [
         vec![2, 3, -2, 4],
         vec![-2, 0, -1],
         vec![-2, 2, -1],
@@ -49,6 +49,7 @@ pub fn run() {
         vec![-1, -3, -2, -10, -3],
         vec![0, -3, 1, 1],
     ];
+
     for nums in input {
         println!("{}", Solution::max_product(nums));
     }
@@ -77,7 +78,7 @@ impl Solution {
 }
 
 pub fn run() {
-    let input = vec![
+    let input = [
         vec![2, 3, -2, 4],
         vec![-2, 0, -1],
         vec![-2, 2, -1],

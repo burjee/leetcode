@@ -32,6 +32,7 @@ impl Solution {
 
 pub fn run() {
     let input = [38, 0, 9, 99, 123, 2438186];
+
     for num in input {
         println!("{}", Solution::add_digits(num));
     }

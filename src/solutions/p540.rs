@@ -19,7 +19,7 @@ impl Solution {
 }
 
 pub fn run() {
-    let input = vec![
+    let input = [
         vec![1, 1, 2, 3, 3, 4, 4, 8, 8],
         vec![3, 3, 7, 7, 10, 11, 11],
         vec![1],
@@ -27,6 +27,7 @@ pub fn run() {
         vec![1, 2, 2, 3, 3],
         vec![0, 1, 1],
     ];
+
     for nums in input {
         println!("{}", Solution::single_non_duplicate(nums));
     }

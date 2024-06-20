@@ -10,7 +10,7 @@ impl Solution {
 }
 
 pub fn run() {
-    let input = vec![
+    let input = [
         vec![3, 0, 1],
         vec![0, 1],
         vec![9, 6, 4, 2, 3, 5, 7, 0, 1],
@@ -18,6 +18,7 @@ pub fn run() {
         vec![0],
         vec![1],
     ];
+
     for nums in input {
         println!("{}", Solution::missing_number(nums));
     }
@@ -40,7 +41,7 @@ impl Solution {
 }
 
 pub fn run() {
-    let input = vec![
+    let input = [
         vec![3, 0, 1],
         vec![0, 1],
         vec![9, 6, 4, 2, 3, 5, 7, 0, 1],
@@ -48,6 +49,7 @@ pub fn run() {
         vec![0],
         vec![1],
     ];
+
     for nums in input {
         println!("{}", Solution::missing_number(nums));
     }

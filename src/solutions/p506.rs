@@ -22,7 +22,8 @@ impl Solution {
 }
 
 pub fn run() {
-    let input = vec![vec![5, 4, 3, 2, 1], vec![10, 3, 8, 9, 4]];
+    let input = [vec![5, 4, 3, 2, 1], vec![10, 3, 8, 9, 4]];
+
     for score in input {
         println!("{:?}", Solution::find_relative_ranks(score));
     }

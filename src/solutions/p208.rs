@@ -65,96 +65,64 @@ impl Trie {
 }
 
 pub fn run() {
-    enum Cmd {
+    enum Cmd<'a> {
         Trie,
-        Insert,
-        Search,
-        StartsWith,
+        Insert(Vec<&'a str>),
+        Search(Vec<&'a str>),
+        StartsWith(Vec<&'a str>),
     }
 
-    let input = vec![
-        (
-            vec![
-                Cmd::Trie,
-                Cmd::Insert,
-                Cmd::Search,
-                Cmd::Search,
-                Cmd::StartsWith,
-                Cmd::Insert,
-                Cmd::Search,
-            ],
-            vec![
-                vec![],
-                vec!["apple".to_string()],
-                vec!["apple".to_string()],
-                vec!["app".to_string()],
-                vec!["app".to_string()],
-                vec!["app".to_string()],
-                vec!["app".to_string()],
-            ],
-        ),
-        (
-            vec![
-                Cmd::Trie,
-                Cmd::Insert,
-                Cmd::Search,
-                Cmd::Search,
-                Cmd::StartsWith,
-                Cmd::Insert,
-                Cmd::Search,
-            ],
-            vec![
-                vec![],
-                vec!["google".to_string()],
-                vec!["google".to_string()],
-                vec!["g".to_string()],
-                vec!["google".to_string()],
-                vec!["yooooo".to_string()],
-                vec!["yoooo".to_string()],
-            ],
-        ),
-        (
-            vec![
-                Cmd::Trie,
-                Cmd::Insert,
-                Cmd::Search,
-                Cmd::Search,
-                Cmd::StartsWith,
-                Cmd::StartsWith,
-            ],
-            vec![
-                vec![],
-                vec!["yohaha".to_string()],
-                vec!["haha".to_string()],
-                vec!["yoha".to_string()],
-                vec!["y".to_string()],
-                vec!["yoha".to_string()],
-            ],
-        ),
+    let input = [
+        vec![
+            Cmd::Trie,
+            Cmd::Insert(vec!["apple"]),
+            Cmd::Search(vec!["apple"]),
+            Cmd::Search(vec!["app"]),
+            Cmd::StartsWith(vec!["app"]),
+            Cmd::Insert(vec!["app"]),
+            Cmd::Search(vec!["app"]),
+        ],
+        vec![
+            Cmd::Trie,
+            Cmd::Insert(vec!["google"]),
+            Cmd::Search(vec!["google"]),
+            Cmd::Search(vec!["g"]),
+            Cmd::StartsWith(vec!["google"]),
+            Cmd::Insert(vec!["yooooo"]),
+            Cmd::Search(vec!["yoooo"]),
+        ],
+        vec![
+            Cmd::Trie,
+            Cmd::Insert(vec!["yohaha"]),
+            Cmd::Search(vec!["haha"]),
+            Cmd::Search(vec!["yoha"]),
+            Cmd::StartsWith(vec!["y"]),
+            Cmd::StartsWith(vec!["yoha"]),
+        ],
     ];
 
     let mut trie = Trie::new();
-    for (cmd, words) in input {
-        for i in 0..cmd.len() {
-            match cmd[i] {
+    for commands in input {
+        for cmd in commands {
+            match cmd {
                 Cmd::Trie => {
                     trie = Trie::new();
                     print!("null, ")
                 }
-                Cmd::Insert => {
-                    for word in &words[i] {
-                        trie.insert(word.clone());
+                Cmd::Insert(words) => {
+                    for word in words {
+                        trie.insert(word.to_string());
                         print!("null, ")
                     }
                 }
-                Cmd::Search => {
-                    for word in &words[i] {
-                        print!("{}, ", trie.search(word.clone()));
+                Cmd::Search(words) => {
+                    for word in words {
+                        print!("{}, ", trie.search(word.to_string()));
                     }
                 }
-                Cmd::StartsWith => {
-                    for word in &words[i] {
-                        print!("{}, ", trie.starts_with(word.clone()));
+                Cmd::StartsWith(words) => {
+                    for word in words {
+                        print!("{}, ", trie.starts_with(word.to_string()));
                     }
                 }
             }

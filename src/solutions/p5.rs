@@ -26,7 +26,7 @@ impl Solution {
                 pos.push(i - 2);
             }
         }
-        String::from(&s[ans[0]..ans[1]])
+        (&s[ans[0]..ans[1]]).to_string()
     }
 }
 
@@ -34,23 +34,24 @@ impl Solution {
 // vec.retain
 // vec.swap_remove
 pub fn run() {
-    let string = vec![
-        String::from("babad"),
-        String::from("cbbd"),
-        String::from("a"),
-        String::from("ac"),
-        String::from("aa"),
-        String::from("athjuiodsf"),
-        String::from("aaaa"),
-        String::from("aaaaccbb"),
-        String::from("abcdcba"),
-        String::from("aabbccbbaa"),
-        String::from("abccba"),
-        String::from("aaaba"),
-        String::from("aaaabcviivcbaaaa"),
-        String::from("abcbavvabcbawerrewabcbavvabcba"),
+    let input = [
+        "babad",
+        "cbbd",
+        "a",
+        "ac",
+        "aa",
+        "athjuiodsf",
+        "aaaa",
+        "aaaaccbb",
+        "abcdcba",
+        "aabbccbbaa",
+        "abccba",
+        "aaaba",
+        "aaaabcviivcbaaaa",
+        "abcbavvabcbawerrewabcbavvabcba",
     ];
-    for s in string {
-        println!("ans: {}", Solution::longest_palindrome(s));
+
+    for s in input {
+        println!("{}", Solution::longest_palindrome(s.to_string()));
     }
 }

@@ -24,24 +24,23 @@ impl Solution {
 }
 
 pub fn run() {
-    let strs = vec![
-        String::from("dvdf"),
-        String::from("a"),
-        String::from(" "),
-        String::from("abcabcbb"),
-        String::from("bbbbb"),
-        String::from("pwwkew"),
-        String::from(""),
-        String::from("tghshtte"),
-        String::from("redsfgaffer"),
-        String::from("ffdsfdsfsdf"),
-        String::from("asdqweert"),
-        String::from("fffasfaffsd"),
-        String::from("pmfzsevcfsegvs"),
+    let input = [
+        "dvdf",
+        "a",
+        " ",
+        "abcabcbb",
+        "bbbbb",
+        "pwwkew",
+        "",
+        "tghshtte",
+        "redsfgaffer",
+        "ffdsfdsfsdf",
+        "asdqweert",
+        "fffasfaffsd",
+        "pmfzsevcfsegvs",
     ];
 
-    for s in strs {
-        let res = Solution::length_of_longest_substring(s);
-        println!("res: {}", res);
+    for s in input {
+        println!("{}", Solution::length_of_longest_substring(s.to_string()));
     }
 }

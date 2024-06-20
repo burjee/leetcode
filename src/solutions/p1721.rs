@@ -114,13 +114,14 @@ pub fn run() {
         (vec![7, 9, 6, 6, 7, 8, 3, 0, 9, 5], 5),
         (vec![100, 90], 2),
     ];
+
     for (nums, k) in input {
-        let head = ListNode::from(nums);
+        let head = ListNode::from_vec(nums);
         println!(
             "{:?}",
             Solution::swap_nodes(head, k)
                 .unwrap_or(Box::new(ListNode::new(-1)))
-                .to_vec()
+                .get_vec()
         );
     }
 }

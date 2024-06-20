@@ -15,7 +15,8 @@ impl Solution {
 
 pub fn run() {
     let input = [(vec![3, 2, 2, 3], 3), (vec![0, 1, 2, 2, 3, 0, 4, 2], 2)];
+
     for (mut nums, val) in input {
-        println!("{:?}", Solution::remove_element(&mut nums, val));
+        println!("{}", Solution::remove_element(&mut nums, val));
     }
 }

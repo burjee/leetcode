@@ -44,7 +44,7 @@ impl Solution {
 }
 
 pub fn run() {
-    let input = vec![
+    let input = [
         vec![vec![1, 2, 3, 4], vec![5, 6, 7, 8], vec![9, 10, 11, 12]],
         vec![vec![1], vec![2], vec![3]],
         vec![vec![1, 2, 3]],
@@ -103,7 +103,7 @@ impl Solution {
 }
 
 pub fn run() {
-    let input = vec![
+    let input = [
         vec![vec![1, 2, 3, 4], vec![5, 6, 7, 8], vec![9, 10, 11, 12]],
         vec![vec![1], vec![2], vec![3]],
         vec![vec![1, 2, 3]],

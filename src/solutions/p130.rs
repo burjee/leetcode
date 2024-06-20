@@ -48,7 +48,7 @@ impl Solution {
 }
 
 pub fn run() {
-    let input = vec![
+    let input = [
         vec![
             vec!['X', 'X', 'X', 'X'],
             vec!['X', 'O', 'O', 'X'],
@@ -65,6 +65,7 @@ pub fn run() {
         ],
         vec![vec!['O', 'X', 'X', 'O'], vec!['X', 'O', 'O', 'X']],
     ];
+
     for mut board in input {
         Solution::solve(&mut board);
         for row in board {

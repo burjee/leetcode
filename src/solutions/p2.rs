@@ -1,15 +1,4 @@
-#[derive(PartialEq, Eq, Clone, Debug)]
-pub struct ListNode {
-    pub val: i32,
-    pub next: Option<Box<ListNode>>,
-}
-
-impl ListNode {
-    #[inline]
-    fn new(val: i32) -> Self {
-        ListNode { next: None, val }
-    }
-}
+use crate::utils::list_node::ListNode;
 
 pub struct Solution {}
 impl Solution {
@@ -50,7 +39,7 @@ impl Solution {
 }
 
 pub fn run() {
-    let inputs = vec![
+    let input = [
         (vec![2, 4, 3], vec![5, 6, 4]),
         (vec![0], vec![0]),
         (vec![9, 9, 9, 9, 9, 9, 9], vec![9, 9, 9, 9]),
@@ -58,25 +47,9 @@ pub fn run() {
         (vec![1, 2, 3], vec![1, 1, 1, 1, 1, 1, 1, 1, 1]),
     ];
 
-    for input in inputs {
-        let l1 = get_list_node(input.0);
-        let l2 = get_list_node(input.1);
-        let mut ans = Solution::add_two_numbers(l1, l2);
-        while let Some(n) = ans {
-            print!("{}, ", n.val);
-            ans = n.next;
-        }
-        println!("");
+    for input in input {
+        let l1 = ListNode::from_vec(input.0);
+        let l2 = ListNode::from_vec(input.1);
+        ListNode::print(Solution::add_two_numbers(l1, l2));
     }
-}
-
-fn get_list_node(numbers: Vec<i32>) -> Option<Box<ListNode>> {
-    let mut head = Box::new(ListNode::new(-1));
-    let mut point = head.as_mut();
-    for n in numbers {
-        let node = Some(Box::new(ListNode { val: n, next: None }));
-        point.next = node;
-        point = point.next.as_mut().unwrap();
-    }
-    head.next
 }

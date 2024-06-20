@@ -19,17 +19,18 @@ impl Solution {
 }
 
 pub fn run() {
-    let string = vec![
-        String::from("["),
-        String::from("]"),
-        String::from("()"),
-        String::from("()[]{}"),
-        String::from("(]"),
-        String::from("([)]"),
-        String::from("{[]}"),
-        String::from("{{}[][[[]]]}"),
+    let input = [
+        "[",
+        "]",
+        "()",
+        "()[]{}",
+        "(]",
+        "([)]",
+        "{[]}",
+        "{{}[][[[]]]}",
     ];
-    for s in string {
-        println!("{}", Solution::is_valid(s));
+
+    for s in input {
+        println!("{}", Solution::is_valid(s.to_string()));
     }
 }

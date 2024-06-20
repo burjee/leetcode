@@ -12,10 +12,11 @@ impl Solution {
 }
 
 pub fn run() {
-    let input = vec![
+    let input = [
         0b00000010100101000001111010011100,
         0b11111111111111111111111111111101,
     ];
+
     for x in input {
         println!("{}", Solution::reverse_bits(x));
     }

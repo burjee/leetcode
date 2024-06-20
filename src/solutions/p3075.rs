@@ -16,6 +16,7 @@ pub fn run() {
         (vec![2, 3, 4, 5], 1),
         (vec![12, 1, 42], 3),
     ];
+
     for (happiness, k) in input {
         println!("{}", Solution::maximum_happiness_sum(happiness, k));
     }

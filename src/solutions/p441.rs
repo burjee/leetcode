@@ -20,7 +20,8 @@ impl Solution {
 }
 
 pub fn run() {
-    let input = vec![1, 5, 8, 2, 3, 11, 30, 56, 79, 1804289383];
+    let input = [1, 5, 8, 2, 3, 11, 30, 56, 79, 1804289383];
+
     for n in input {
         println!("{}", Solution::arrange_coins(n));
     }

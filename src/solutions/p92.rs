@@ -1,16 +1,4 @@
-// Definition for singly-linked list.
-#[derive(PartialEq, Eq, Clone, Debug)]
-pub struct ListNode {
-    pub val: i32,
-    pub next: Option<Box<ListNode>>,
-}
-
-impl ListNode {
-    #[inline]
-    fn new(val: i32) -> Self {
-        ListNode { next: None, val }
-    }
-}
+use crate::utils::list_node::ListNode;
 
 struct Solution {}
 impl Solution {
@@ -52,30 +40,16 @@ impl Solution {
 }
 
 pub fn run() {
-    let inputs = vec![
+    let input = [
         (vec![1, 2, 3, 4, 5], 2, 4),
         (vec![5], 1, 1),
         (vec![1, 2, 3, 4, 5], 1, 5),
         (vec![1, 2, 3, 4, 5], 2, 3),
         (vec![1, 2, 3, 4, 5], 1, 4),
     ];
-    for input in inputs {
-        let mut output = Solution::reverse_between(get_list_node(input.0), input.1, input.2);
-        while let Some(node) = output {
-            print!("{} ", node.val);
-            output = node.next;
-        }
-        println!();
-    }
-}
 
-fn get_list_node(numbers: Vec<i32>) -> Option<Box<ListNode>> {
-    let mut head = ListNode::new(-1);
-    let mut point = &mut head;
-    for n in numbers {
-        let node = Some(Box::new(ListNode::new(n)));
-        point.next = node;
-        point = point.next.as_mut().unwrap();
+    for (nums, left, right) in input {
+        let head = ListNode::from_vec(nums);
+        ListNode::print(Solution::reverse_between(head, left, right));
     }
-    head.next
 }

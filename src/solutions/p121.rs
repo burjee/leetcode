@@ -14,12 +14,13 @@ impl Solution {
 }
 
 pub fn run() {
-    let prices = vec![
+    let input = [
         vec![7, 1, 5, 3, 6, 4],
         vec![7, 6, 4, 3, 1],
         vec![3, 7, 1, 2, 4],
     ];
-    for price in prices {
-        println!("{}", Solution::max_profit(price));
+
+    for prices in input {
+        println!("{}", Solution::max_profit(prices));
     }
 }

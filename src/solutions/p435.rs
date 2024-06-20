@@ -19,7 +19,7 @@ impl Solution {
 }
 
 pub fn run() {
-    let input = vec![
+    let input = [
         vec![vec![1, 2], vec![2, 3], vec![3, 4], vec![1, 3]],
         vec![vec![1, 2], vec![1, 2], vec![1, 2]],
         vec![vec![1, 2], vec![2, 3]],
@@ -34,6 +34,7 @@ pub fn run() {
             vec![4, 5],
         ],
     ];
+
     for intervals in input {
         println!("{}", Solution::erase_overlap_intervals(intervals));
     }

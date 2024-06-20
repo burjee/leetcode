@@ -1,8 +1,8 @@
 struct Solution {}
 impl Solution {
-    pub fn combination_sum(candidates: Vec<i32>, target: i32) -> Vec<Vec<i32>> {
-        let mut candidates = candidates;
+    pub fn combination_sum(mut candidates: Vec<i32>, target: i32) -> Vec<Vec<i32>> {
         candidates.sort();
+
         let mut ans = Vec::new();
         Solution::get_ans(&candidates, &mut ans, Vec::new(), target, 0);
         ans
@@ -31,7 +31,7 @@ impl Solution {
 }
 
 pub fn run() {
-    let input = vec![
+    let input = [
         (vec![2, 3, 6, 7], 7),
         (vec![2, 3, 5], 8),
         (vec![2, 3, 5], 23),
@@ -40,7 +40,7 @@ pub fn run() {
         (vec![1], 2),
     ];
 
-    for val in input {
-        println!("ans: {:?}", Solution::combination_sum(val.0, val.1));
+    for (candidates, target) in input {
+        println!("{:?}", Solution::combination_sum(candidates, target));
     }
 }

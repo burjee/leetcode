@@ -1,22 +1,4 @@
-// Definition for a binary tree node.
-#[derive(Debug, PartialEq, Eq)]
-pub struct TreeNode {
-    pub val: i32,
-    pub left: Option<Rc<RefCell<TreeNode>>>,
-    pub right: Option<Rc<RefCell<TreeNode>>>,
-}
-
-impl TreeNode {
-    #[inline]
-    pub fn new(val: i32) -> Self {
-        TreeNode {
-            val,
-            left: None,
-            right: None,
-        }
-    }
-}
-
+use crate::utils::tree::TreeNode;
 use std::cell::RefCell;
 use std::rc::Rc;
 
@@ -83,63 +65,30 @@ impl Codec {
  * let ans: Option<Rc<RefCell<TreeNode>>> = obj.deserialize(data);
  */
 pub fn run() {
-    let input = vec![
-        vec![1, 2, 3, -1, -1, 4, 5],
+    let input = [
+        vec![Some(1), Some(2), Some(3), None, None, Some(4), Some(5)],
         vec![],
-        vec![1],
-        vec![1, 2],
-        vec![1, 2, 3, 4, 5, 6, 7, 8, 9],
+        vec![Some(1)],
+        vec![Some(1), Some(2)],
+        vec![
+            Some(1),
+            Some(2),
+            Some(3),
+            Some(4),
+            Some(5),
+            Some(6),
+            Some(7),
+            Some(8),
+            Some(9),
+        ],
     ];
+
     let codec = Codec::new();
     for nums in input {
-        let root = get_tree_node(nums);
+        let root = TreeNode::from_vec(nums);
         let data = codec.serialize(root);
         println!("{}", data);
         let root = codec.deserialize(data);
-        print_tree_node(root);
+        TreeNode::print(root);
     }
-}
-
-fn print_tree_node(root: Option<Rc<RefCell<TreeNode>>>) {
-    use std::collections::VecDeque;
-    let mut nodes = VecDeque::new();
-    nodes.push_back(root);
-    while let Some(tree) = nodes.pop_front() {
-        if let Some(node) = tree {
-            print!("{} ", node.borrow().val);
-            nodes.push_back(node.borrow_mut().left.take());
-            nodes.push_back(node.borrow_mut().right.take());
-        }
-    }
-    println!();
-}
-
-fn get_tree_node(nums: Vec<i32>) -> Option<Rc<RefCell<TreeNode>>> {
-    if nums.is_empty() {
-        return None;
-    }
-    use std::collections::VecDeque;
-
-    let mut nums = nums.into_iter();
-    let root = Rc::new(RefCell::new(TreeNode::new(nums.next().unwrap())));
-    let mut nodes = VecDeque::new();
-    nodes.push_back(Rc::clone(&root));
-    'outer: while let Some(node) = nodes.pop_front() {
-        for i in 0..2 {
-            if let Some(n) = nums.next() {
-                if n != -1 {
-                    let new_node = Rc::new(RefCell::new(TreeNode::new(n)));
-                    if i == 0 {
-                        node.borrow_mut().left = Some(Rc::clone(&new_node));
-                    } else {
-                        node.borrow_mut().right = Some(Rc::clone(&new_node));
-                    }
-                    nodes.push_back(new_node);
-                }
-            } else {
-                break 'outer;
-            }
-        }
-    }
-    Some(root)
 }

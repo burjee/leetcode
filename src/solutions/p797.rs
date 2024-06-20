@@ -23,6 +23,7 @@ pub fn run() {
         vec![vec![1, 2], vec![3], vec![3], vec![]],
         vec![vec![4, 3, 1], vec![3, 2, 4], vec![3], vec![4], vec![]],
     ];
+
     for graph in input {
         println!("{:?}", Solution::all_paths_source_target(graph));
     }

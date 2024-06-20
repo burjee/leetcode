@@ -32,7 +32,7 @@ impl Solution {
 }
 
 pub fn run() {
-    let input = vec![
+    let input = [
         (vec![1, 1, 1, 2, 2, 3], 2),
         (vec![1], 1),
         (
@@ -55,6 +55,7 @@ pub fn run() {
             4,
         ),
     ];
+
     for (nums, k) in input {
         println!("{:?}", Solution::top_k_frequent(nums, k));
     }
@@ -120,7 +121,7 @@ impl Solution {
 }
 
 pub fn run() {
-    let input = vec![
+    let input = [
         (vec![1, 1, 1, 2, 2, 3], 2),
         (vec![1], 1),
         (
@@ -143,6 +144,7 @@ pub fn run() {
             4,
         ),
     ];
+
     for (nums, k) in input {
         println!("{:?}", Solution::top_k_frequent(nums, k));
     }

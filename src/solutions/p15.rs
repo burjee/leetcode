@@ -91,14 +91,15 @@ impl Solution {
 }
 
 pub fn run() {
-    let numbers = vec![
+    let input = [
         vec![0, 0, 0],
         vec![-1, 0, 1, 2, -1, -4],
         vec![-1, 0, 1, 2, -1, -4, 0, 0, 2, 8],
         vec![],
         vec![0],
     ];
-    for num in numbers {
-        println!("ans: {:?}", Solution::three_sum(num));
+
+    for nums in input {
+        println!("{:?}", Solution::three_sum(nums));
     }
 }

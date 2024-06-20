@@ -29,7 +29,7 @@ impl Solution {
 }
 
 pub fn run() {
-    let input = vec![
+    let input = [
         (vec![75, 25, 1], 100),
         (vec![3, 2, 1], 12),
         (vec![431, 62, 88, 428], 9084),
@@ -47,6 +47,7 @@ pub fn run() {
         (vec![1], 1),
         (vec![1], 2),
     ];
+
     for (coins, amount) in input {
         println!("{}", Solution::coin_change(coins, amount));
     }
@@ -86,7 +87,7 @@ impl Solution {
 }
 
 pub fn run() {
-    let input = vec![
+    let input = [
         (vec![75, 25, 1], 100),
         (vec![3, 2, 1], 12),
         (vec![431, 62, 88, 428], 9084),
@@ -104,6 +105,7 @@ pub fn run() {
         (vec![1], 1),
         (vec![1], 2),
     ];
+
     for (coins, amount) in input {
         println!("{}", Solution::coin_change(coins, amount));
     }

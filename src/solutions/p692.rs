@@ -1,3 +1,4 @@
+use crate::utils::string::strs_to_string;
 use std::cmp::Reverse;
 use std::collections::{BinaryHeap, HashMap};
 
@@ -31,18 +32,10 @@ pub fn run() {
         ),
         (vec!["i", "love", "leetcode", "i", "love", "coding"], 3),
     ];
-    for (words, k) in input {
-        let words = to_str(words);
-        println!("{:?}", Solution::top_k_frequent(words, k));
-    }
-}
 
-fn to_str(words: Vec<&str>) -> Vec<String> {
-    let mut w = Vec::with_capacity(words.len());
-    for word in words {
-        w.push(word.to_string());
+    for (words, k) in input {
+        println!("{:?}", Solution::top_k_frequent(strs_to_string(words), k));
     }
-    w
 }
 
 /* sort
@@ -71,28 +64,4 @@ impl Solution {
     }
 }
 
-pub fn run() {
-    let input = [
-        (vec!["i", "love", "leetcode", "i", "love", "coding"], 2),
-        (
-            vec![
-                "the", "day", "is", "sunny", "the", "the", "the", "sunny", "is", "is",
-            ],
-            4,
-        ),
-        (vec!["i", "love", "leetcode", "i", "love", "coding"], 3),
-    ];
-    for (words, k) in input {
-        let words = to_str(words);
-        println!("{:?}", Solution::top_k_frequent(words, k));
-    }
-}
-
-fn to_str(words: Vec<&str>) -> Vec<String> {
-    let mut w = Vec::with_capacity(words.len());
-    for word in words {
-        w.push(word.to_string());
-    }
-    w
-}
  */

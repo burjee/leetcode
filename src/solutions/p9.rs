@@ -6,7 +6,7 @@ impl Solution {
 }
 
 pub fn run() {
-    let input = vec![121, -121, 10, 1221];
+    let input = [121, -121, 10, 1221];
 
     for x in input {
         println!("{}", Solution::is_palindrome(x));

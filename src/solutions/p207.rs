@@ -31,7 +31,7 @@ impl Solution {
 }
 
 pub fn run() {
-    let input = vec![
+    let input = [
         (2, vec![vec![1, 0]]),
         (2, vec![vec![1, 0], vec![0, 1]]),
         (3, vec![vec![1, 0], vec![2, 1]]),
@@ -66,6 +66,7 @@ pub fn run() {
             ],
         ),
     ];
+
     for (num_courses, prerequisites) in input {
         println!("{}", Solution::can_finish(num_courses, prerequisites));
     }

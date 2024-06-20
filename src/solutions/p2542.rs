@@ -26,11 +26,12 @@ impl Solution {
 }
 
 pub fn run() {
-    let inputs = [
+    let input = [
         (vec![1, 3, 3, 2], vec![2, 1, 3, 4], 3),
         (vec![4, 2, 3, 1, 1], vec![7, 5, 10, 9, 6], 1),
     ];
-    for (nums1, nums2, k) in inputs {
+
+    for (nums1, nums2, k) in input {
         println!("{}", Solution::max_score(nums1, nums2, k));
     }
 }

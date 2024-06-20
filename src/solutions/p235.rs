@@ -1,22 +1,4 @@
-// Definition for a binary tree node.
-#[derive(Debug, PartialEq, Eq)]
-pub struct TreeNode {
-    pub val: i32,
-    pub left: Option<Rc<RefCell<TreeNode>>>,
-    pub right: Option<Rc<RefCell<TreeNode>>>,
-}
-
-impl TreeNode {
-    #[inline]
-    pub fn new(val: i32) -> Self {
-        TreeNode {
-            val,
-            left: None,
-            right: None,
-        }
-    }
-}
-
+use crate::utils::tree::TreeNode;
 use std::cell::RefCell;
 use std::mem;
 use std::rc::Rc;
@@ -63,11 +45,12 @@ impl Solution {
 }
 
 pub fn run() {
-    let input = vec![
+    let input = [
         (vec![6, 2, 8, 0, 4, 7, 9, -1, -1, 3, 5], 2, 8),
         (vec![6, 2, 8, 0, 4, 7, 9, -1, -1, 3, 5], 2, 4),
         (vec![2, 1], 2, 1),
     ];
+
     for (nums, n, m) in input {
         let (root, p, q) = get_tree_node(nums, n, m);
         print!("p={} ", p.as_ref().unwrap().borrow().val);

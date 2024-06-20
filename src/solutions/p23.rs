@@ -1,17 +1,5 @@
+use crate::utils::list_node::ListNode;
 use std::collections::BTreeMap;
-
-#[derive(PartialEq, Eq, Clone, Debug)]
-pub struct ListNode {
-    pub val: i32,
-    pub next: Option<Box<ListNode>>,
-}
-
-impl ListNode {
-    #[inline]
-    fn new(val: i32) -> Self {
-        ListNode { next: None, val }
-    }
-}
 
 struct Solution {}
 impl Solution {
@@ -38,7 +26,7 @@ impl Solution {
 }
 
 pub fn run() {
-    let lists = vec![
+    let input = [
         vec![vec![1, 2, 4], vec![1, 3, 4], vec![1, 3, 4], vec![1, 3, 4]],
         vec![vec![], vec![]],
         vec![],
@@ -49,27 +37,12 @@ pub fn run() {
         vec![vec![2, 2, 6, 8, 8, 9, 15]],
     ];
 
-    for list in lists {
-        let mut stack = Vec::new();
-        for nums in list {
-            stack.push(get_list_node(nums));
-        }
-        let mut ans = Solution::merge_k_lists(stack);
-        while let Some(n) = ans {
-            print!("{}, ", n.val);
-            ans = n.next;
-        }
-        println!("");
-    }
-}
+    for list in input {
+        let lists = list
+            .into_iter()
+            .map(|nums| ListNode::from_vec(nums))
+            .collect();
 
-fn get_list_node(numbers: Vec<i32>) -> Option<Box<ListNode>> {
-    let mut head = Box::new(ListNode::new(-1));
-    let mut point = head.as_mut();
-    for n in numbers {
-        let node = Some(Box::new(ListNode { val: n, next: None }));
-        point.next = node;
-        point = point.next.as_mut().unwrap();
+        ListNode::print(Solution::merge_k_lists(lists));
     }
-    head.next
 }

@@ -1,17 +1,4 @@
-// Definition for singly-linked list.
-#[derive(PartialEq, Eq, Clone, Debug)]
-pub struct ListNode {
-    pub val: i32,
-    pub next: Option<Box<ListNode>>,
-}
-
-impl ListNode {
-    #[inline]
-    fn _new(val: i32) -> Self {
-        ListNode { next: None, val }
-    }
-}
-
+use crate::utils::list_node::ListNode;
 use std::collections::VecDeque;
 
 struct Solution {}
@@ -38,7 +25,7 @@ impl Solution {
 }
 
 pub fn run() {
-    let input = vec![
+    let input = [
         vec![1, 2, 3, 4],
         vec![1, 2, 3, 4, 5],
         vec![1, 2, 3, 4, 5, 6],
@@ -46,27 +33,9 @@ pub fn run() {
         vec![1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
     ];
 
-    for list in input {
-        let mut head = get_list_node(list);
+    for nums in input {
+        let mut head = ListNode::from_vec(nums);
         Solution::reorder_list(&mut head);
-        print_list_node(head);
+        ListNode::print(head);
     }
-}
-
-fn get_list_node(mut numbers: Vec<i32>) -> Option<Box<ListNode>> {
-    numbers.reverse();
-    let mut next = None;
-    for n in numbers {
-        let node = Some(Box::new(ListNode { val: n, next: next }));
-        next = node;
-    }
-    next
-}
-
-fn print_list_node(mut head: Option<Box<ListNode>>) {
-    while let Some(node) = head {
-        print!("{} ", node.val);
-        head = node.next;
-    }
-    println!();
 }

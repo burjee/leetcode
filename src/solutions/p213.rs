@@ -28,7 +28,7 @@ impl Solution {
 }
 
 pub fn run() {
-    let input = vec![
+    let input = [
         vec![2, 3, 2],
         vec![1, 2, 3, 1],
         vec![1, 2, 3],
@@ -39,6 +39,7 @@ pub fn run() {
         vec![1, 3, 1, 3, 100],
         vec![0, 0],
     ];
+
     for nums in input {
         println!("{}", Solution::rob(nums));
     }

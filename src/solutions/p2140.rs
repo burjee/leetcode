@@ -33,7 +33,7 @@ impl Solution {
 }
 
 pub fn run() {
-    let inputs = [
+    let input = [
         vec![vec![3, 2], vec![4, 3], vec![4, 4], vec![2, 5]],
         vec![vec![1, 1], vec![2, 2], vec![3, 3], vec![4, 4], vec![5, 5]],
         vec![
@@ -44,7 +44,8 @@ pub fn run() {
             vec![999, 999],
         ],
     ];
-    for questions in inputs {
+
+    for questions in input {
         println!("{:?}", Solution::most_points(questions));
     }
 }

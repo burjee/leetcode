@@ -23,16 +23,17 @@ impl Solution {
 }
 
 pub fn run() {
-    let input = vec![
-        ("ABAB".to_string(), 2),
-        ("AABABBA".to_string(), 1),
-        ("ABABABABABAB".to_string(), 3),
-        ("AAAABBCCCEEQQCC".to_string(), 5),
-        ("ABAJKGDSJJJJJJJJJJJJJJ".to_string(), 5),
-        ("JKGDSJJJJJJJJJJJJJJ".to_string(), 5),
-        ("ANBJANBJAABBABAJABABJNJBJNA".to_string(), 5),
+    let input = [
+        ("ABAB", 2),
+        ("AABABBA", 1),
+        ("ABABABABABAB", 3),
+        ("AAAABBCCCEEQQCC", 5),
+        ("ABAJKGDSJJJJJJJJJJJJJJ", 5),
+        ("JKGDSJJJJJJJJJJJJJJ", 5),
+        ("ANBJANBJAABBABAJABABJNJBJNA", 5),
     ];
+
     for (s, k) in input {
-        println!("{}", Solution::character_replacement(s, k));
+        println!("{}", Solution::character_replacement(s.to_string(), k));
     }
 }

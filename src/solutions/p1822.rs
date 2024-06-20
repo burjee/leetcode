@@ -23,6 +23,7 @@ pub fn run() {
         vec![1, 5, 0, 2, -3],
         vec![-1, 1, -1, 1, -1],
     ];
+
     for nums in input {
         println!("{}", Solution::array_sign(nums));
     }

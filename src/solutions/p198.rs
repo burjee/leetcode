@@ -23,7 +23,7 @@ impl Solution {
 }
 
 pub fn run() {
-    let input = vec![
+    let input = [
         vec![1, 2, 3, 1],
         vec![2, 7, 9, 3, 1],
         vec![7, 1, 1, 7],
@@ -32,6 +32,7 @@ pub fn run() {
         vec![0, 1],
         vec![0],
     ];
+
     for nums in input {
         println!("{}", Solution::rob(nums));
     }
@@ -59,7 +60,7 @@ impl Solution {
 }
 
 pub fn run() {
-    let input = vec![
+    let input = [
         vec![1, 2, 3, 1],
         vec![2, 7, 9, 3, 1],
         vec![7, 1, 1, 7],
@@ -68,6 +69,7 @@ pub fn run() {
         vec![0, 1],
         vec![0],
     ];
+
     for nums in input {
         println!("{}", Solution::rob(nums));
     }

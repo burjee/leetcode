@@ -72,7 +72,7 @@ impl Solution {
 }
 
 pub fn run() {
-    let input = vec![
+    let input = [
         (
             vec![
                 vec!['A', 'B', 'C', 'E'],

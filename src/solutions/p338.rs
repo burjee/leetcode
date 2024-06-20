@@ -11,7 +11,8 @@ impl Solution {
 }
 
 pub fn run() {
-    let input = vec![0, 2, 5, 7, 12, 20, 56];
+    let input = [0, 2, 5, 7, 12, 20, 56];
+
     for n in input {
         println!("{:?}", Solution::count_bits(n));
     }

@@ -1,3 +1,4 @@
+use crate::utils::string::strs_to_string;
 use std::collections::HashMap;
 
 struct Solution {}
@@ -66,67 +67,37 @@ impl Solution {
 }
 
 pub fn run() {
-    let input = vec![
+    let input = [
         vec![
-            "ksqvsyq".to_string(),
-            "ks".to_string(),
-            "kss".to_string(),
-            "czvh".to_string(),
-            "zczpzvdhx".to_string(),
-            "zczpzvh".to_string(),
-            "zczpzvhx".to_string(),
-            "zcpzvh".to_string(),
-            "zczvh".to_string(),
-            "gr".to_string(),
-            "grukmj".to_string(),
-            "ksqvsq".to_string(),
-            "gruj".to_string(),
-            "kssq".to_string(),
-            "ksqsq".to_string(),
-            "grukkmj".to_string(),
-            "grukj".to_string(),
-            "zczpzfvdhx".to_string(),
-            "gru".to_string(),
+            "ksqvsyq",
+            "ks",
+            "kss",
+            "czvh",
+            "zczpzvdhx",
+            "zczpzvh",
+            "zczpzvhx",
+            "zcpzvh",
+            "zczvh",
+            "gr",
+            "grukmj",
+            "ksqvsq",
+            "gruj",
+            "kssq",
+            "ksqsq",
+            "grukkmj",
+            "grukj",
+            "zczpzfvdhx",
+            "gru",
         ],
-        vec![
-            "bdca".to_string(),
-            "bda".to_string(),
-            "ca".to_string(),
-            "dca".to_string(),
-            "a".to_string(),
-        ],
-        vec![
-            "a".to_string(),
-            "b".to_string(),
-            "ab".to_string(),
-            "bac".to_string(),
-        ],
-        vec![
-            "a".to_string(),
-            "b".to_string(),
-            "ba".to_string(),
-            "bca".to_string(),
-            "bda".to_string(),
-            "bdca".to_string(),
-        ],
-        vec![
-            "a".to_string(),
-            "b".to_string(),
-            "bca".to_string(),
-            "bda".to_string(),
-            "bdca".to_string(),
-        ],
-        vec![
-            "xbc".to_string(),
-            "pcxbcf".to_string(),
-            "xb".to_string(),
-            "cxbc".to_string(),
-            "pcxbc".to_string(),
-        ],
-        vec!["abcd".to_string(), "dbqca".to_string()],
+        vec!["bdca", "bda", "ca", "dca", "a"],
+        vec!["a", "b", "ab", "bac"],
+        vec!["a", "b", "ba", "bca", "bda", "bdca"],
+        vec!["a", "b", "bca", "bda", "bdca"],
+        vec!["xbc", "pcxbcf", "xb", "cxbc", "pcxbc"],
+        vec!["abcd", "dbqca"],
     ];
 
     for words in input {
-        println!("{}", Solution::longest_str_chain(words));
+        println!("{}", Solution::longest_str_chain(strs_to_string(words)));
     }
 }

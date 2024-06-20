@@ -1,3 +1,5 @@
+use crate::utils::string::strs_to_string;
+
 struct Solution {}
 impl Solution {
     // horizontal
@@ -33,8 +35,8 @@ pub fn run() {
         vec!["flower", "flow", "flight"],
         vec!["dog", "racecar", "car"],
     ];
+
     for strs in input {
-        let strs = strs.into_iter().map(|s| s.to_string()).collect();
-        println!("{}", Solution::longest_common_prefix(strs));
+        println!("{}", Solution::longest_common_prefix(strs_to_string(strs)));
     }
 }

@@ -8,10 +8,10 @@ pub struct ListNode {
 impl ListNode {
     #[inline]
     pub fn new(val: i32) -> Self {
-        ListNode { next: None, val }
+        ListNode { val, next: None }
     }
 
-    pub fn from(nums: Vec<i32>) -> Option<Box<ListNode>> {
+    pub fn from_vec(nums: Vec<i32>) -> Option<Box<ListNode>> {
         let mut next = None;
         for val in nums.into_iter().rev() {
             next = Some(Box::new(ListNode { val, next }));
@@ -19,14 +19,22 @@ impl ListNode {
         next
     }
 
-    pub fn to_vec(&self) -> Vec<i32> {
+    pub fn get_vec(&self) -> Vec<i32> {
         let mut nums = vec![self.val];
-        let mut point = &self.next;
-        while let Some(node) = point {
+        let mut next = &self.next;
+        while let Some(node) = next {
             nums.push(node.val);
-            point = &node.next;
+            next = &node.next;
         }
         nums
+    }
+
+    pub fn print(mut list_node: Option<Box<ListNode>>) {
+        while let Some(node) = list_node {
+            print!("{} ", node.val);
+            list_node = node.next;
+        }
+        println!();
     }
 }
 

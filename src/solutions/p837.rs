@@ -63,6 +63,7 @@ impl Solution {
 
 pub fn run() {
     let input = [(10, 1, 10), (6, 1, 10), (21, 17, 10)];
+
     for (n, k, max_pts) in input {
         println!("{}", Solution::new21_game(n, k, max_pts));
     }

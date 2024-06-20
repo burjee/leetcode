@@ -46,41 +46,35 @@ impl MedianFinder {
 pub fn run() {
     enum Cmd {
         MedianFinder,
-        AddNum,
+        AddNum(Vec<i32>),
         FindMedian,
     }
 
-    let input: Vec<(Vec<Cmd>, Vec<Vec<i32>>)> = vec![(
-        vec![
-            Cmd::MedianFinder,
-            Cmd::AddNum,
-            Cmd::AddNum,
-            Cmd::FindMedian,
-            Cmd::AddNum,
-            Cmd::FindMedian,
-        ],
-        vec![vec![], vec![1], vec![2], vec![], vec![3], vec![]],
-    )];
+    let input = [
+        Cmd::MedianFinder,
+        Cmd::AddNum(vec![1]),
+        Cmd::AddNum(vec![2]),
+        Cmd::FindMedian,
+        Cmd::AddNum(vec![3]),
+        Cmd::FindMedian,
+    ];
 
-    for (cmds, nums) in input {
-        let mut median_finder = MedianFinder::new();
-        for (cmd, num) in cmds.into_iter().zip(nums.into_iter()) {
-            match cmd {
-                Cmd::MedianFinder => {
-                    median_finder = MedianFinder::new();
+    let mut median_finder = MedianFinder::new();
+    for cmd in input {
+        match cmd {
+            Cmd::MedianFinder => {
+                median_finder = MedianFinder::new();
+                print!("null, ");
+            }
+            Cmd::AddNum(nums) => {
+                for n in nums {
+                    median_finder.add_num(n);
                     print!("null, ");
                 }
-                Cmd::AddNum => {
-                    for n in num {
-                        median_finder.add_num(n);
-                        print!("null, ");
-                    }
-                }
-                Cmd::FindMedian => {
-                    print!("{}, ", median_finder.find_median());
-                }
+            }
+            Cmd::FindMedian => {
+                print!("{}, ", median_finder.find_median());
             }
         }
-        println!();
     }
 }

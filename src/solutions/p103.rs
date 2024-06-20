@@ -1,22 +1,4 @@
-// Definition for a binary tree node.
-#[derive(Debug, PartialEq, Eq)]
-pub struct TreeNode {
-    pub val: i32,
-    pub left: Option<Rc<RefCell<TreeNode>>>,
-    pub right: Option<Rc<RefCell<TreeNode>>>,
-}
-
-impl TreeNode {
-    #[inline]
-    pub fn new(val: i32) -> Self {
-        TreeNode {
-            val,
-            left: None,
-            right: None,
-        }
-    }
-}
-
+use crate::utils::tree::TreeNode;
 use std::cell::RefCell;
 use std::rc::Rc;
 
@@ -53,82 +35,49 @@ impl Solution {
 }
 
 pub fn run() {
-    let roots = vec![
-        vec![3, 9, 20, -1, -1, 15, 7],
-        vec![3, 1, 5, 0, 2, 4, 6],
-        vec![1],
+    let input = [
+        vec![Some(3), Some(9), Some(20), None, None, Some(15), Some(7)],
+        vec![
+            Some(3),
+            Some(1),
+            Some(5),
+            Some(0),
+            Some(2),
+            Some(4),
+            Some(6),
+        ],
+        vec![Some(1)],
         vec![],
-        vec![2, -1, 2],
-        vec![5, 1, 4, -1, -1, 3, 6],
-        vec![5, 1, 4, -1, -1, -1, 2],
-        vec![2, -1, 3, -1, 4, -1, 5],
-        vec![5, 3, 8, 2, 4, 7, 10, 1, -1, -1, -1, 6, -1, 9, 11],
+        vec![Some(2), None, Some(2)],
+        vec![Some(5), Some(1), Some(4), None, None, Some(3), Some(6)],
+        vec![Some(5), Some(1), Some(4), None, None, None, Some(2)],
+        vec![Some(2), None, Some(3), None, Some(4), None, Some(5)],
+        vec![
+            Some(5),
+            Some(3),
+            Some(8),
+            Some(2),
+            Some(4),
+            Some(7),
+            Some(10),
+            Some(1),
+            None,
+            None,
+            None,
+            Some(6),
+            None,
+            Some(9),
+            Some(11),
+        ],
     ];
 
-    for root in roots {
-        println!("{:?}", Solution::zigzag_level_order(get_tree_node(root)));
+    for nums in input {
+        let root = TreeNode::from_vec(nums);
+        println!("{:?}", Solution::zigzag_level_order(root));
     }
-}
-
-fn get_tree_node(numbers: Vec<i32>) -> Option<Rc<RefCell<TreeNode>>> {
-    if numbers.len() == 0 {
-        return None;
-    }
-
-    let mut nums = numbers.into_iter();
-    let root = Rc::new(RefCell::new(TreeNode::new(nums.next().unwrap())));
-    let mut nodes = vec![Rc::clone(&root)];
-    let mut temps = vec![];
-    'outer: loop {
-        for node in nodes {
-            if let Some(n) = nums.next() {
-                if n != -1 {
-                    let left = Rc::new(RefCell::new(TreeNode::new(n)));
-                    node.borrow_mut().left = Some(Rc::clone(&left));
-                    temps.push(Rc::clone(&left));
-                }
-            } else {
-                break 'outer;
-            }
-            if let Some(n) = nums.next() {
-                if n != -1 {
-                    let right = Rc::new(RefCell::new(TreeNode::new(n)));
-                    node.borrow_mut().right = Some(Rc::clone(&right));
-                    temps.push(Rc::clone(&right));
-                }
-            } else {
-                break 'outer;
-            }
-        }
-        nodes = temps;
-        temps = vec![];
-    }
-    Some(root)
 }
 
 /* zigzag
-// Definition for a binary tree node.
-#[derive(Debug, PartialEq, Eq)]
-pub struct TreeNode {
-    pub val: i32,
-    pub left: Option<Rc<RefCell<TreeNode>>>,
-    pub right: Option<Rc<RefCell<TreeNode>>>,
-}
-
-impl TreeNode {
-    #[inline]
-    pub fn new(val: i32) -> Self {
-        TreeNode {
-            val,
-            left: None,
-            right: None,
-        }
-    }
-}
-
-use std::cell::RefCell;
-use std::rc::Rc;
-
 struct Solution {}
 impl Solution {
     pub fn zigzag_level_order(root: Option<Rc<RefCell<TreeNode>>>) -> Vec<Vec<i32>> {
@@ -171,56 +120,45 @@ impl Solution {
 }
 
 pub fn run() {
-    let roots = vec![
-        vec![3, 9, 20, -1, -1, 15, 7],
-        vec![3, 1, 5, 0, 2, 4, 6],
-        vec![1],
+    let input = [
+        vec![Some(3), Some(9), Some(20), None, None, Some(15), Some(7)],
+        vec![
+            Some(3),
+            Some(1),
+            Some(5),
+            Some(0),
+            Some(2),
+            Some(4),
+            Some(6),
+        ],
+        vec![Some(1)],
         vec![],
-        vec![2, -1, 2],
-        vec![5, 1, 4, -1, -1, 3, 6],
-        vec![5, 1, 4, -1, -1, -1, 2],
-        vec![2, -1, 3, -1, 4, -1, 5],
-        vec![5, 3, 8, 2, 4, 7, 10, 1, -1, -1, -1, 6, -1, 9, 11],
+        vec![Some(2), None, Some(2)],
+        vec![Some(5), Some(1), Some(4), None, None, Some(3), Some(6)],
+        vec![Some(5), Some(1), Some(4), None, None, None, Some(2)],
+        vec![Some(2), None, Some(3), None, Some(4), None, Some(5)],
+        vec![
+            Some(5),
+            Some(3),
+            Some(8),
+            Some(2),
+            Some(4),
+            Some(7),
+            Some(10),
+            Some(1),
+            None,
+            None,
+            None,
+            Some(6),
+            None,
+            Some(9),
+            Some(11),
+        ],
     ];
 
-    for root in roots {
-        println!("{:?}", Solution::zigzag_level_order(get_tree_node(root)));
+    for nums in input {
+        let root = TreeNode::from_vec(nums);
+        println!("{:?}", Solution::zigzag_level_order(root));
     }
-}
-
-fn get_tree_node(numbers: Vec<i32>) -> Option<Rc<RefCell<TreeNode>>> {
-    if numbers.len() == 0 {
-        return None;
-    }
-
-    let mut nums = numbers.into_iter();
-    let root = Rc::new(RefCell::new(TreeNode::new(nums.next().unwrap())));
-    let mut nodes = vec![Rc::clone(&root)];
-    let mut temps = vec![];
-    'outer: loop {
-        for node in nodes {
-            if let Some(n) = nums.next() {
-                if n != -1 {
-                    let left = Rc::new(RefCell::new(TreeNode::new(n)));
-                    node.borrow_mut().left = Some(Rc::clone(&left));
-                    temps.push(Rc::clone(&left));
-                }
-            } else {
-                break 'outer;
-            }
-            if let Some(n) = nums.next() {
-                if n != -1 {
-                    let right = Rc::new(RefCell::new(TreeNode::new(n)));
-                    node.borrow_mut().right = Some(Rc::clone(&right));
-                    temps.push(Rc::clone(&right));
-                }
-            } else {
-                break 'outer;
-            }
-        }
-        nodes = temps;
-        temps = vec![];
-    }
-    Some(root)
 }
  */

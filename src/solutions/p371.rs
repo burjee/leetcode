@@ -11,7 +11,7 @@ impl Solution {
 }
 
 pub fn run() {
-    let input = vec![
+    let input = [
         (1, 2),
         (2, 3),
         (5, 7),
@@ -23,6 +23,7 @@ pub fn run() {
         (6, -12),
         (-77, -55),
     ];
+
     for (a, b) in input {
         println!("{}", Solution::get_sum(a, b));
     }

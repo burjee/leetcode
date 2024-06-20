@@ -10,12 +10,9 @@ impl Solution {
 }
 
 pub fn run() {
-    let input = vec![
-        "A man, a plan, a canal: Panama".to_string(),
-        "race a car".to_string(),
-        " ".to_string(),
-    ];
+    let input = ["A man, a plan, a canal: Panama", "race a car", " "];
+
     for s in input {
-        println!("{}", Solution::is_palindrome(s));
+        println!("{}", Solution::is_palindrome(s.to_string()));
     }
 }

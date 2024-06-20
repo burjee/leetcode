@@ -55,6 +55,7 @@ pub fn run() {
         (vec![-2, -1, 1, 2, 3, 4, 5], 7, 3),
         (vec![0, 1, 1, 1, 2, 3, 6, 7, 8, 9], 9, 4),
     ];
+
     for (arr, k, x) in input {
         println!("{:?}", Solution::find_closest_elements(arr, k, x));
     }

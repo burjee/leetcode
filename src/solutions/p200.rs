@@ -31,7 +31,7 @@ impl Solution {
 }
 
 pub fn run() {
-    let input = vec![
+    let input = [
         vec![
             vec!['1', '1', '1', '1', '1', '0', '1', '1', '1', '1'],
             vec!['0', '1', '1', '0', '1', '1', '1', '0', '1', '1'],
@@ -133,6 +133,7 @@ pub fn run() {
         vec![vec!['0']],
         vec![vec!['1']],
     ];
+
     for grid in input {
         println!("{}", Solution::num_islands(grid));
     }

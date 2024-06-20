@@ -1,3 +1,4 @@
+use crate::utils::string::strs_to_string;
 use std::collections::HashMap;
 
 struct Solution {}
@@ -17,22 +18,14 @@ impl Solution {
 }
 
 pub fn run() {
-    let input = vec![
-        to_string(vec!["eat", "tea", "tan", "ate", "nat", "bat"]),
-        to_string(vec!["baa", "aba", "bab"]),
-        to_string(vec![""]),
-        to_string(vec!["a"]),
+    let input = [
+        strs_to_string(vec!["eat", "tea", "tan", "ate", "nat", "bat"]),
+        strs_to_string(vec!["baa", "aba", "bab"]),
+        strs_to_string(vec![""]),
+        strs_to_string(vec!["a"]),
     ];
 
     for strs in input {
         println!("{:?}", Solution::group_anagrams(strs));
     }
-}
-
-fn to_string(strs: Vec<&str>) -> Vec<String> {
-    let mut vec = Vec::new();
-    for s in strs {
-        vec.push(String::from(s));
-    }
-    vec
 }

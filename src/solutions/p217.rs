@@ -15,11 +15,12 @@ impl Solution {
 }
 
 pub fn run() {
-    let input = vec![
+    let input = [
         vec![1, 2, 3, 1],
         vec![1, 2, 3, 4],
         vec![1, 1, 1, 3, 3, 4, 3, 2, 4, 2],
     ];
+
     for nums in input {
         println!("{}", Solution::contains_duplicate(nums));
     }
@@ -40,11 +41,12 @@ impl Solution {
 }
 
 pub fn run() {
-    let input = vec![
+    let input = [
         vec![1, 2, 3, 1],
         vec![1, 2, 3, 4],
         vec![1, 1, 1, 3, 3, 4, 3, 2, 4, 2],
     ];
+
     for nums in input {
         println!("{}", Solution::contains_duplicate(nums));
     }

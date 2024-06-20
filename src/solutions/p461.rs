@@ -13,6 +13,7 @@ impl Solution {
 
 pub fn run() {
     let input = [(1, 4), (3, 1)];
+
     for (x, y) in input {
         println!("{}", Solution::hamming_distance(x, y));
     }

@@ -55,7 +55,7 @@ impl Solution {
 }
 
 pub fn run() {
-    let input = vec![
+    let input = [
         (vec![vec![3, 5], vec![12, 15]], vec![6, 8]),
         (vec![vec![1, 2], vec![4, 6]], vec![3, 5]),
         (vec![vec![3, 4], vec![6, 9]], vec![1, 2]),
@@ -84,7 +84,7 @@ pub fn run() {
         ),
     ];
 
-    for intervals in input {
-        println!("{:?}", Solution::insert(intervals.0, intervals.1));
+    for (intervals, new_interval) in input {
+        println!("{:?}", Solution::insert(intervals, new_interval));
     }
 }

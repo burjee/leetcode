@@ -1,22 +1,4 @@
-// Definition for a binary tree node.
-#[derive(Debug, PartialEq, Eq)]
-pub struct TreeNode {
-    pub val: i32,
-    pub left: Option<Rc<RefCell<TreeNode>>>,
-    pub right: Option<Rc<RefCell<TreeNode>>>,
-}
-
-impl TreeNode {
-    #[inline]
-    pub fn new(val: i32) -> Self {
-        TreeNode {
-            val,
-            left: None,
-            right: None,
-        }
-    }
-}
-
+use crate::utils::tree::TreeNode;
 use std::cell::RefCell;
 use std::rc::Rc;
 
@@ -53,47 +35,45 @@ impl Solution {
 pub fn run() {
     let input = [
         (
-            vec![3, 5, 1, 6, 2, 9, 8, -1, -1, 7, 4],
-            vec![3, 5, 1, 6, 7, 4, 2, -1, -1, -1, -1, -1, -1, 9, 8],
+            vec![
+                Some(3),
+                Some(5),
+                Some(1),
+                Some(6),
+                Some(2),
+                Some(9),
+                Some(8),
+                None,
+                None,
+                Some(7),
+                Some(4),
+            ],
+            vec![
+                Some(3),
+                Some(5),
+                Some(1),
+                Some(6),
+                Some(7),
+                Some(4),
+                Some(2),
+                None,
+                None,
+                None,
+                None,
+                None,
+                None,
+                Some(9),
+                Some(8),
+            ],
         ),
-        (vec![1, 2, 3], vec![1, 3, 2]),
+        (
+            vec![Some(1), Some(2), Some(3)],
+            vec![Some(1), Some(3), Some(2)],
+        ),
     ];
     for (nums1, nums2) in input {
-        let root1 = get_tree_node(nums1);
-        let root2 = get_tree_node(nums2);
+        let root1 = TreeNode::from_vec(nums1);
+        let root2 = TreeNode::from_vec(nums2);
         println!("{:?}", Solution::leaf_similar(root1, root2));
     }
-}
-
-fn get_tree_node(nums: Vec<i32>) -> Option<Rc<RefCell<TreeNode>>> {
-    let root = Rc::new(RefCell::new(TreeNode::new(nums[0])));
-    let mut nodes = vec![root.clone()];
-    let mut temps = vec![];
-    let mut nums = nums.into_iter();
-    nums.next();
-    'outer: loop {
-        for node in nodes {
-            if let Some(n) = nums.next() {
-                if n != -1 {
-                    let left = Rc::new(RefCell::new(TreeNode::new(n)));
-                    node.borrow_mut().left = Some(left.clone());
-                    temps.push(left);
-                }
-            } else {
-                break 'outer;
-            }
-            if let Some(n) = nums.next() {
-                if n != -1 {
-                    let right = Rc::new(RefCell::new(TreeNode::new(n)));
-                    node.borrow_mut().right = Some(right.clone());
-                    temps.push(right);
-                }
-            } else {
-                break 'outer;
-            }
-        }
-        nodes = temps;
-        temps = vec![];
-    }
-    Some(root)
 }

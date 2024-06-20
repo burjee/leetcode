@@ -15,7 +15,8 @@ impl Solution {
 }
 
 pub fn run() {
-    let input = vec![vec![-3, 2, -3, 4, 2], vec![1, 2], vec![1, -2, -3]];
+    let input = [vec![-3, 2, -3, 4, 2], vec![1, 2], vec![1, -2, -3]];
+
     for nums in input {
         println!("{}", Solution::min_start_value(nums));
     }

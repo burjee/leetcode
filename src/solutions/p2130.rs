@@ -49,9 +49,10 @@ impl Solution {
 }
 
 pub fn run() {
-    let inputs = [vec![5, 4, 2, 1], vec![4, 2, 2, 3], vec![1, 100000]];
-    for nums in inputs {
-        let head = ListNode::from(nums);
+    let input = [vec![5, 4, 2, 1], vec![4, 2, 2, 3], vec![1, 100000]];
+
+    for nums in input {
+        let head = ListNode::from_vec(nums);
         println!("{:?}", Solution::pair_sum(head));
     }
 }

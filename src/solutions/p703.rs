@@ -47,37 +47,37 @@ impl KthLargest {
 //     }
 // }
 
-enum Kth {
-    Init { k: i32, nums: Vec<i32> },
-    Add(i32),
-}
-
 /**
  * Your KthLargest object will be instantiated and called as such:
  * let obj = KthLargest::new(k, nums);
  * let ret_1: i32 = obj.add(val);
  */
 pub fn run() {
+    enum Cmd {
+        Init { k: i32, nums: Vec<i32> },
+        Add(i32),
+    }
+
     let input = [
-        Kth::Init {
+        Cmd::Init {
             k: 3,
             nums: vec![4, 5, 8, 2],
         },
-        Kth::Add(3),
-        Kth::Add(5),
-        Kth::Add(10),
-        Kth::Add(9),
-        Kth::Add(4),
+        Cmd::Add(3),
+        Cmd::Add(5),
+        Cmd::Add(10),
+        Cmd::Add(9),
+        Cmd::Add(4),
     ];
 
     let mut kth = KthLargest::new(0, vec![]);
     for cmd in input {
         match cmd {
-            Kth::Init { k, nums } => {
+            Cmd::Init { k, nums } => {
                 kth = KthLargest::new(k, nums);
                 print!("null, ");
             }
-            Kth::Add(val) => {
+            Cmd::Add(val) => {
                 print!("{}, ", kth.add(val));
             }
         }

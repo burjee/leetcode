@@ -1,15 +1,4 @@
-#[derive(PartialEq, Eq, Clone, Debug)]
-pub struct ListNode {
-    pub val: i32,
-    pub next: Option<Box<ListNode>>,
-}
-
-impl ListNode {
-    #[inline]
-    fn new(val: i32) -> Self {
-        ListNode { next: None, val }
-    }
-}
+use crate::utils::list_node::ListNode;
 
 struct Solution {}
 impl Solution {
@@ -42,6 +31,7 @@ impl Solution {
         }
         ans.unwrap().next
     }
+
     /* leetcode 1900kb sample
     pub fn remove_nth_from_end(head: Option<Box<ListNode>>, n: i32) -> Option<Box<ListNode>> {
         let mut dummy = Box::new(ListNode {
@@ -68,7 +58,7 @@ impl Solution {
     */
 }
 pub fn run() {
-    let input = vec![
+    let input = [
         (vec![1, 2, 3, 4, 5], 2),
         (vec![1, 2, 3, 4, 5], 5),
         (vec![1], 1),
@@ -79,30 +69,8 @@ pub fn run() {
         (vec![5, 6, 85, 8, 6, 52, 54, 85, 8, 7, 4, 5, 6, 6, 8, 8], 7),
     ];
 
-    for value in input {
-        let head = get_head(value.0);
-
-        let solution = Solution::remove_nth_from_end(head, value.1);
-        let mut node = &solution;
-        while let Some(n) = node {
-            print!("{}, ", n.val);
-            node = &n.next;
-        }
-        println!("");
+    for (nums, n) in input {
+        let head = ListNode::from_vec(nums);
+        ListNode::print(Solution::remove_nth_from_end(head, n));
     }
-}
-
-fn get_head(numbers: Vec<i32>) -> Option<Box<ListNode>> {
-    let mut head = None;
-    if let Some(&n) = numbers.get(0) {
-        head = Some(Box::new(ListNode::new(n)));
-    }
-    let mut point = &mut head;
-    for i in 1..numbers.len() {
-        let new_node = Some(Box::new(ListNode::new(numbers[i])));
-        let this_node = point.as_mut().unwrap();
-        this_node.next = new_node;
-        point = &mut this_node.next;
-    }
-    head
 }

@@ -18,7 +18,7 @@ impl Solution {
 }
 
 pub fn run() {
-    let numbers = vec![
+    let input = [
         vec![1, 8, 6, 2, 5, 4, 8, 3, 7],
         vec![1, 1],
         vec![4, 3, 2, 1, 4],
@@ -26,7 +26,8 @@ pub fn run() {
         vec![5, 5, 5, 5, 5, 5, 5],
         vec![5, 5, 5, 5, 100, 100, 5, 5, 5],
     ];
-    for n in numbers {
-        println!("ans: {}", Solution::max_area(n));
+
+    for height in input {
+        println!("{}", Solution::max_area(height));
     }
 }

@@ -55,6 +55,7 @@ pub fn run() {
             vec![5, 1, 2, 1, 3, 2, 3, 4, 5, 3],
         ),
     ];
+
     for (nums1, nums2) in input {
         println!("{:?}", Solution::max_uncrossed_lines(nums1, nums2));
     }

@@ -49,6 +49,7 @@ pub fn run() {
         vec![vec![2, 1, 3], vec![6, 5, 4], vec![7, 8, 9]],
         vec![vec![-19, 57], vec![-40, -5]],
     ];
+
     for matrix in input {
         println!("{}", Solution::min_falling_path_sum(matrix));
     }

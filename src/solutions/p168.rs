@@ -28,6 +28,7 @@ impl Solution {
 
 pub fn run() {
     let input = [1, 26, 27, 28, 52, 701, 5566, 55688, 54321, 987654321];
+
     for column_number in input {
         println!("{}", Solution::convert_to_title(column_number));
     }

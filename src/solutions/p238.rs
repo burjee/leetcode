@@ -32,11 +32,12 @@ impl Solution {
 }
 
 pub fn run() {
-    let input = vec![
+    let input = [
         vec![1, 2, 3, 4],
         vec![-1, 1, 0, -3, 3],
         vec![2, -5, 7, 2, 2, 1, 3, -6, -2, 2],
     ];
+
     for nums in input {
         println!("{:?}", Solution::product_except_self(nums));
     }

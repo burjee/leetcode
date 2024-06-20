@@ -20,7 +20,7 @@ impl Solution {
 }
 
 pub fn run() {
-    let input = vec![
+    let input = [
         vec![2, 1],
         vec![2, 3, 4, 1],
         vec![2, 3, 4, 5, 1],
@@ -33,6 +33,7 @@ pub fn run() {
         vec![10, 1, 2, 3, 4, 5, 6, 7, 8, 9],
         vec![2, 3, 4, 5, 6, 1],
     ];
+
     for nums in input {
         println!("{}", Solution::find_min(nums));
     }

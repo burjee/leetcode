@@ -56,30 +56,30 @@ impl Solution {
 }
 
 pub fn run() {
-    let input = vec![
-        "1110119111".to_string(),
-        "10011".to_string(),
-        "120211022".to_string(),
-        "1312012020320320211022".to_string(),
-        "10".to_string(),
-        "190".to_string(),
-        "11".to_string(),
-        "111".to_string(),
-        "1111".to_string(),
-        "11111".to_string(),
-        "111111".to_string(),
-        "1111111".to_string(),
-        "11106".to_string(),
-        "12".to_string(),
-        "226".to_string(),
-        "0".to_string(),
-        "06".to_string(),
-        "121122315413146123343463".to_string(),
-        "111111111111111111111111111111111111111111111".to_string(),
+    let input = [
+        "1110119111",
+        "10011",
+        "120211022",
+        "1312012020320320211022",
+        "10",
+        "190",
+        "11",
+        "111",
+        "1111",
+        "11111",
+        "111111",
+        "1111111",
+        "11106",
+        "12",
+        "226",
+        "0",
+        "06",
+        "121122315413146123343463",
+        "111111111111111111111111111111111111111111111",
     ];
 
     for s in input {
-        println!("{}", Solution::num_decodings(s));
+        println!("{}", Solution::num_decodings(s.to_string()));
     }
 }
 
@@ -119,30 +119,30 @@ impl Solution {
 }
 
 pub fn run() {
-    let input = vec![
-        "1110119111".to_string(),
-        "10011".to_string(),
-        "120211022".to_string(),
-        "1312012020320320211022".to_string(),
-        "10".to_string(),
-        "190".to_string(),
-        "11".to_string(),
-        "111".to_string(),
-        "1111".to_string(),
-        "11111".to_string(),
-        "111111".to_string(),
-        "1111111".to_string(),
-        "11106".to_string(),
-        "12".to_string(),
-        "226".to_string(),
-        "0".to_string(),
-        "06".to_string(),
-        "121122315413146123343463".to_string(),
-        "111111111111111111111111111111111111111111111".to_string(),
+    let input = [
+        "1110119111",
+        "10011",
+        "120211022",
+        "1312012020320320211022",
+        "10",
+        "190",
+        "11",
+        "111",
+        "1111",
+        "11111",
+        "111111",
+        "1111111",
+        "11106",
+        "12",
+        "226",
+        "0",
+        "06",
+        "121122315413146123343463",
+        "111111111111111111111111111111111111111111111",
     ];
 
     for s in input {
-        println!("{}", Solution::num_decodings(s));
+        println!("{}", Solution::num_decodings(s.to_string()));
     }
 }
  */
@@ -184,24 +184,24 @@ impl Solution {
 }
 
 pub fn run() {
-    let input = vec![
-        "190".to_string(),
-        "11".to_string(),
-        "111".to_string(),
-        "1111".to_string(),
-        "11111".to_string(),
-        "111111".to_string(),
-        "1111111".to_string(),
-        "11106".to_string(),
-        "12".to_string(),
-        "226".to_string(),
-        "0".to_string(),
-        "06".to_string(),
-        // "111111111111111111111111111111111111111111111".to_string(),
+    let input = [
+        "190",
+        "11",
+        "111",
+        "1111",
+        "11111",
+        "111111",
+        "1111111",
+        "11106",
+        "12",
+        "226",
+        "0",
+        "06",
+        // "111111111111111111111111111111111111111111111",
     ];
 
     for s in input {
-        println!("{}", Solution::num_decodings(s));
+        println!("{}", Solution::num_decodings(s.to_string()));
     }
 }
  */
@@ -260,29 +260,29 @@ impl Solution {
 }
 
 pub fn run() {
-    let input = vec![
-        "10011".to_string(),
-        "120211022".to_string(),
-        "1312012020320320211022".to_string(),
-        "10".to_string(),
-        "190".to_string(),
-        "11".to_string(),
-        "111".to_string(),
-        "1111".to_string(),
-        "11111".to_string(),
-        "111111".to_string(),
-        "1111111".to_string(),
-        "11106".to_string(),
-        "12".to_string(),
-        "226".to_string(),
-        "0".to_string(),
-        "06".to_string(),
-        "121122315413146123343463".to_string(),
-        "111111111111111111111111111111111111111111111".to_string(),
+    let input = [
+        "10011",
+        "120211022",
+        "1312012020320320211022",
+        "10",
+        "190",
+        "11",
+        "111",
+        "1111",
+        "11111",
+        "111111",
+        "1111111",
+        "11106",
+        "12",
+        "226",
+        "0",
+        "06",
+        "121122315413146123343463",
+        "111111111111111111111111111111111111111111111",
     ];
 
     for s in input {
-        println!("{}", Solution::num_decodings(s));
+        println!("{}", Solution::num_decodings(s.to_string()));
     }
 }
  */

@@ -10,12 +10,13 @@ impl Solution {
 }
 
 pub fn run() {
-    let input = vec![
+    let input = [
         vec![2, 2, 1],
         vec![4, 1, 2, 1, 2],
         vec![1],
         vec![4, 1, 2, 1, 2, 4, 3, 3, 6, 7, 8, 9, 7, 9, 8],
     ];
+
     for nums in input {
         println!("{}", Solution::single_number(nums));
     }

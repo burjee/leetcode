@@ -64,13 +64,9 @@ pub fn run() {
         vec![1],
         vec![1, 2, 3, 4],
     ];
+
     for nums in input {
-        let head = ListNode::from(nums);
-        println!(
-            "{:?}",
-            Solution::swap_pairs(head)
-                .unwrap_or(Box::new(ListNode::new(-1)))
-                .to_vec()
-        );
+        let head = ListNode::from_vec(nums);
+        ListNode::print(Solution::swap_pairs(head));
     }
 }

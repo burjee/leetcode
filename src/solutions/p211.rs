@@ -50,74 +50,51 @@ impl WordDictionary {
 }
 
 pub fn run() {
-    enum Cmd {
+    enum Cmd<'a> {
         WordDictionary,
-        AddWord,
-        Search,
+        AddWord(Vec<&'a str>),
+        Search(Vec<&'a str>),
     }
 
-    let input = vec![
-        (
-            vec![
-                Cmd::WordDictionary,
-                Cmd::AddWord,
-                Cmd::AddWord,
-                Cmd::AddWord,
-                Cmd::Search,
-                Cmd::Search,
-                Cmd::Search,
-                Cmd::Search,
-            ],
-            vec![
-                vec![],
-                vec!["bad".to_string()],
-                vec!["dad".to_string()],
-                vec!["mad".to_string()],
-                vec!["pad".to_string()],
-                vec!["bad".to_string()],
-                vec![".ad".to_string()],
-                vec!["b..".to_string()],
-            ],
-        ),
-        (
-            vec![
-                Cmd::WordDictionary,
-                Cmd::AddWord,
-                Cmd::AddWord,
-                Cmd::Search,
-                Cmd::Search,
-                Cmd::Search,
-                Cmd::Search,
-            ],
-            vec![
-                vec![],
-                vec!["apple".to_string()],
-                vec!["google".to_string()],
-                vec!["ap..e".to_string()],
-                vec!["...le".to_string()],
-                vec![".oo.e".to_string()],
-                vec!["a.p.e".to_string()],
-            ],
-        ),
+    let input = [
+        vec![
+            Cmd::WordDictionary,
+            Cmd::AddWord(vec!["bad"]),
+            Cmd::AddWord(vec!["dad"]),
+            Cmd::AddWord(vec!["mad"]),
+            Cmd::Search(vec!["pad"]),
+            Cmd::Search(vec!["bad"]),
+            Cmd::Search(vec![".ad"]),
+            Cmd::Search(vec!["b.."]),
+        ],
+        vec![
+            Cmd::WordDictionary,
+            Cmd::AddWord(vec!["apple"]),
+            Cmd::AddWord(vec!["google"]),
+            Cmd::Search(vec!["ap..e"]),
+            Cmd::Search(vec!["...le"]),
+            Cmd::Search(vec![".oo.e"]),
+            Cmd::Search(vec!["a.p.e"]),
+        ],
     ];
 
-    let mut wd = WordDictionary::new();
-    for (cmd, words) in input {
-        for i in 0..cmd.len() {
-            match cmd[i] {
+    let mut word_dictionary = WordDictionary::new();
+    for commands in input {
+        for cmd in commands {
+            match cmd {
                 Cmd::WordDictionary => {
-                    wd = WordDictionary::new();
+                    word_dictionary = WordDictionary::new();
                     print!("null, ")
                 }
-                Cmd::AddWord => {
-                    for word in &words[i] {
-                        wd.add_word(word.clone());
+                Cmd::AddWord(words) => {
+                    for word in words {
+                        word_dictionary.add_word(word.to_string());
                         print!("null, ")
                     }
                 }
-                Cmd::Search => {
-                    for word in &words[i] {
-                        print!("{}, ", wd.search(word.clone()));
+                Cmd::Search(words) => {
+                    for word in words {
+                        print!("{}, ", word_dictionary.search(word.to_string()));
                     }
                 }
             }

@@ -15,7 +15,8 @@ impl Solution {
 
 pub fn run() {
     let input = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-    for &n in &input {
-        println!("ans: {}", Solution::climb_stairs(n));
+
+    for n in input {
+        println!("{}", Solution::climb_stairs(n));
     }
 }

@@ -70,7 +70,7 @@ impl Solution {
 }
 
 pub fn run() {
-    let input = vec![
+    let input = [
         vec![
             vec![1, 2, 2, 3, 5],
             vec![3, 2, 3, 4, 4],
@@ -80,6 +80,7 @@ pub fn run() {
         ],
         vec![vec![2, 1], vec![1, 2]],
     ];
+
     for heights in input {
         println!("{:?}", Solution::pacific_atlantic(heights));
     }

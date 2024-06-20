@@ -91,6 +91,7 @@ pub fn run() {
             vec![12, 24],
         ],
     ];
+
     for tasks in input {
         println!("{:?}", Solution::get_order(tasks));
     }

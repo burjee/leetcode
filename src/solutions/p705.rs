@@ -29,42 +29,42 @@ impl MyHashSet {
  * let ret_3: bool = obj.contains(key);
  */
 
-enum HashSet {
-    Init,
-    Add(i32),
-    Remove(i32),
-    Contains(i32),
-}
-
 pub fn run() {
+    enum Cmd {
+        Init,
+        Add(i32),
+        Remove(i32),
+        Contains(i32),
+    }
+
     let input = [
-        HashSet::Init,
-        HashSet::Add(1),
-        HashSet::Add(2),
-        HashSet::Contains(1),
-        HashSet::Contains(3),
-        HashSet::Add(2),
-        HashSet::Contains(2),
-        HashSet::Remove(2),
-        HashSet::Contains(2),
+        Cmd::Init,
+        Cmd::Add(1),
+        Cmd::Add(2),
+        Cmd::Contains(1),
+        Cmd::Contains(3),
+        Cmd::Add(2),
+        Cmd::Contains(2),
+        Cmd::Remove(2),
+        Cmd::Contains(2),
     ];
 
     let mut set = MyHashSet::new();
-    for call in input {
-        match call {
-            HashSet::Init => {
+    for cmd in input {
+        match cmd {
+            Cmd::Init => {
                 set = MyHashSet::new();
                 print!("null, ");
             }
-            HashSet::Add(key) => {
+            Cmd::Add(key) => {
                 set.add(key);
                 print!("null, ");
             }
-            HashSet::Remove(key) => {
+            Cmd::Remove(key) => {
                 set.remove(key);
                 print!("null, ");
             }
-            HashSet::Contains(key) => {
+            Cmd::Contains(key) => {
                 print!("{}, ", set.contains(key));
             }
         }

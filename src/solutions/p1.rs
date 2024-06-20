@@ -19,11 +19,13 @@ impl Solution {
 }
 
 pub fn run() {
-    let nums = vec![vec![2, 7, 11, 15], vec![2, 7, 11, 15], vec![2, 7, 11, 15]];
-    let target = vec![9, 26, 13];
+    let input = [
+        (vec![2, 7, 11, 15], 9),
+        (vec![2, 7, 11, 15], 26),
+        (vec![2, 7, 11, 15], 13),
+    ];
 
-    for (i, num) in nums.into_iter().enumerate() {
-        let res = Solution::two_sum(num, target[i]);
-        println!("{}, {}", res[0], res[1]);
+    for (num, target) in input {
+        println!("{:?}", Solution::two_sum(num, target));
     }
 }

@@ -13,11 +13,12 @@ impl Solution {
 }
 
 pub fn run() {
-    let input = vec![
+    let input = [
         0b11111111111111111111111111111101,
         0b00000000000000000000000000001011,
         0b00000000000000000000000010000000,
     ];
+
     for n in input {
         println!("{}", Solution::hamming_weight(n));
     }

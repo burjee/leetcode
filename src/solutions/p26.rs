@@ -19,6 +19,7 @@ pub fn run() {
         vec![0, 0, 1, 1, 1, 2, 2, 3, 3, 4],
         vec![0, 0, 0, 0, 0],
     ];
+
     for mut nums in input {
         println!("{}", Solution::remove_duplicates(&mut nums));
     }

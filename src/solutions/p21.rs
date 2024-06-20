@@ -1,24 +1,11 @@
-#[derive(PartialEq, Eq, Clone, Debug)]
-pub struct ListNode {
-    pub val: i32,
-    pub next: Option<Box<ListNode>>,
-}
-
-impl ListNode {
-    #[inline]
-    fn new(val: i32) -> Self {
-        ListNode { next: None, val }
-    }
-}
+use crate::utils::list_node::ListNode;
 
 struct Solution {}
 impl Solution {
     pub fn merge_two_lists(
-        l1: Option<Box<ListNode>>,
-        l2: Option<Box<ListNode>>,
+        mut l1: Option<Box<ListNode>>,
+        mut l2: Option<Box<ListNode>>,
     ) -> Option<Box<ListNode>> {
-        let mut l1 = l1;
-        let mut l2 = l2;
         let mut head = Box::new(ListNode::new(-1));
         let mut point = &mut head;
         loop {
@@ -51,7 +38,7 @@ impl Solution {
 }
 
 pub fn run() {
-    let input = vec![
+    let input = [
         (vec![1, 2, 4], vec![1, 3, 4]),
         (vec![], vec![]),
         (vec![], vec![0]),
@@ -62,41 +49,13 @@ pub fn run() {
     ];
 
     for nums in input {
-        let l1 = get_list_node(nums.0);
-        let l2 = get_list_node(nums.1);
-        let mut ans = Solution::merge_two_lists(l1, l2);
-        while let Some(n) = ans {
-            print!("{}, ", n.val);
-            ans = n.next;
-        }
-        println!("");
+        let l1 = ListNode::from_vec(nums.0);
+        let l2 = ListNode::from_vec(nums.1);
+        ListNode::print(Solution::merge_two_lists(l1, l2));
     }
-}
-
-fn get_list_node(numbers: Vec<i32>) -> Option<Box<ListNode>> {
-    let mut head = Box::new(ListNode::new(-1));
-    let mut point = head.as_mut();
-    for n in numbers {
-        let node = Some(Box::new(ListNode { val: n, next: None }));
-        point.next = node;
-        point = point.next.as_mut().unwrap();
-    }
-    head.next
 }
 
 /* recursive
-#[derive(PartialEq, Eq, Clone, Debug)]
-pub struct ListNode {
-    pub val: i32,
-    pub next: Option<Box<ListNode>>,
-}
-
-impl ListNode {
-    #[inline]
-    fn new(val: i32) -> Self {
-        ListNode { next: None, val }
-    }
-}
 
 struct Solution {}
 impl Solution {
@@ -121,7 +80,7 @@ impl Solution {
 }
 
 pub fn run() {
-    let input = vec![
+    let input = [
         (vec![1, 2, 4], vec![1, 3, 4]),
         (vec![], vec![]),
         (vec![], vec![0]),
@@ -132,25 +91,10 @@ pub fn run() {
     ];
 
     for nums in input {
-        let l1 = get_list_node(nums.0);
-        let l2 = get_list_node(nums.1);
-        let mut ans = Solution::merge_two_lists(l1, l2);
-        while let Some(n) = ans {
-            print!("{}, ", n.val);
-            ans = n.next;
-        }
-        println!("");
+        let l1 = ListNode::from_vec(nums.0);
+        let l2 = ListNode::from_vec(nums.1);
+        ListNode::print(Solution::merge_two_lists(l1, l2));
     }
 }
 
-fn get_list_node(numbers: Vec<i32>) -> Option<Box<ListNode>> {
-    let mut head = Box::new(ListNode::new(-1));
-    let mut point = head.as_mut();
-    for n in numbers {
-        let node = Some(Box::new(ListNode { val: n, next: None }));
-        point.next = node;
-        point = point.next.as_mut().unwrap();
-    }
-    head.next
-}
  */

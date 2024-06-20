@@ -16,11 +16,12 @@ impl Solution {
 
 pub fn run() {
     let input = [
-        "Hello World".to_string(),
-        "   fly me   to   the moon  ".to_string(),
-        "luffy is still joyboy".to_string(),
+        "Hello World",
+        "   fly me   to   the moon  ",
+        "luffy is still joyboy",
     ];
+
     for s in input {
-        println!("{}", Solution::length_of_last_word(s));
+        println!("{}", Solution::length_of_last_word(s.to_string()));
     }
 }

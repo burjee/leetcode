@@ -50,6 +50,7 @@ pub fn run() {
             vec![vec![0, 1], vec![0, 2], vec![0, 3], vec![3, 4], vec![4, 5]],
         ),
     ];
+
     for (n, edges) in input {
         println!("{:?}", Solution::find_min_height_trees(n, edges));
     }

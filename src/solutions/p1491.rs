@@ -17,6 +17,7 @@ impl Solution {
 
 pub fn run() {
     let input = [vec![4000, 3000, 1000, 2000], vec![1000, 2000, 3000]];
+
     for salary in input {
         println!("{}", Solution::average(salary));
     }

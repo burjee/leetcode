@@ -41,15 +41,10 @@ impl Solution {
 }
 
 pub fn run() {
-    let input = vec![
-        "23".to_string(),
-        "".to_string(),
-        "56".to_string(),
-        "49".to_string(),
-        "2356".to_string(),
-    ];
+    let input = ["23", "", "56", "49", "2356"];
+
     for digits in input {
-        println!("{:?}", Solution::letter_combinations(digits));
+        println!("{:?}", Solution::letter_combinations(digits.to_string()));
     }
 }
 
@@ -101,7 +96,7 @@ impl Solution {
 }
 
 pub fn run() {
-    let input = vec![
+    let input = [
         "23".to_string(),
         "".to_string(),
         "56".to_string(),
@@ -162,7 +157,7 @@ impl Solution {
 }
 
 pub fn run() {
-    let input = vec![
+    let input = [
         "23".to_string(),
         "".to_string(),
         "56".to_string(),

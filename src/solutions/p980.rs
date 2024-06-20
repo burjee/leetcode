@@ -67,11 +67,12 @@ impl Solution {
 }
 
 pub fn run() {
-    let input = vec![
+    let input = [
         vec![vec![1, 0, 0, 0], vec![0, 0, 0, 0], vec![0, 0, 2, -1]],
         vec![vec![1, 0, 0, 0], vec![0, 0, 0, 0], vec![0, 0, 0, 2]],
         vec![vec![0, 1], vec![2, 0]],
     ];
+
     for grid in input {
         println!("{:?}", Solution::unique_paths_iii(grid));
     }

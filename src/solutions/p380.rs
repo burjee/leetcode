@@ -33,7 +33,7 @@ pub fn run() {
         GetRandom,
     }
 
-    let input = vec![
+    let input = [
         Cmd::RandomizedSet,
         Cmd::Insert(1),
         Cmd::Remove(2),

@@ -46,41 +46,38 @@ impl SmallestInfiniteSet {
  */
 
 pub fn run() {
-    let commands = [
-        "SmallestInfiniteSet",
-        "addBack",
-        "popSmallest",
-        "popSmallest",
-        "popSmallest",
-        "addBack",
-        "popSmallest",
-        "popSmallest",
-        "popSmallest",
+    enum Cmd {
+        SmallestInfiniteSet,
+        Add(Vec<i32>),
+        Pop,
+    }
+
+    let input = [
+        Cmd::SmallestInfiniteSet,
+        Cmd::Add(vec![2]),
+        Cmd::Pop,
+        Cmd::Pop,
+        Cmd::Pop,
+        Cmd::Add(vec![1]),
+        Cmd::Pop,
+        Cmd::Pop,
+        Cmd::Pop,
     ];
-    let inputs = [
-        vec![],
-        vec![2],
-        vec![],
-        vec![],
-        vec![],
-        vec![1],
-        vec![],
-        vec![],
-        vec![],
-    ];
-    let mut obj = SmallestInfiniteSet::new();
-    for (command, input) in commands.into_iter().zip(inputs.into_iter()) {
-        match command {
-            "SmallestInfiniteSet" => {
-                obj = SmallestInfiniteSet::new();
+
+    let mut set = SmallestInfiniteSet::new();
+    for cmd in input {
+        match cmd {
+            Cmd::SmallestInfiniteSet => {
+                set = SmallestInfiniteSet::new();
             }
-            "addBack" => {
-                obj.add_back(input[0]);
+            Cmd::Add(nums) => {
+                for num in nums {
+                    set.add_back(num);
+                }
             }
-            "popSmallest" => {
-                println!("{}", obj.pop_smallest());
+            Cmd::Pop => {
+                println!("{}", set.pop_smallest());
             }
-            _ => {}
         }
     }
 }

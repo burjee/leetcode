@@ -24,6 +24,7 @@ pub fn run() {
         ],
         vec![vec![5]],
     ];
+
     for mat in input {
         println!("{}", Solution::diagonal_sum(mat));
     }

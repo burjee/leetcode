@@ -25,6 +25,7 @@ pub fn run() {
             vec![vec![0, 1], vec![2, 1], vec![3, 1], vec![1, 4], vec![2, 4]],
         ),
     ];
+
     for (n, edges) in input {
         println!("{:?}", Solution::find_smallest_set_of_vertices(n, edges));
     }

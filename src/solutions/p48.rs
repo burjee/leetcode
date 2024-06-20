@@ -20,7 +20,7 @@ impl Solution {
 }
 
 pub fn run() {
-    let matrix = vec![
+    let input = [
         vec![
             vec![5, 1, 9, 11],
             vec![2, 4, 8, 10],
@@ -37,11 +37,11 @@ pub fn run() {
         get_matrix(8),
     ];
 
-    for mut m in matrix {
-        Solution::rotate(&mut m);
-        println!("ans");
-        for array in m {
-            println!("{:2?}", array);
+    for mut matrix in input {
+        Solution::rotate(&mut matrix);
+        println!();
+        for m in matrix {
+            println!("{:2?}", m);
         }
     }
 }

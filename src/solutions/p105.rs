@@ -1,22 +1,4 @@
-// Definition for a binary tree node.
-#[derive(Debug, PartialEq, Eq)]
-pub struct TreeNode {
-    pub val: i32,
-    pub left: Option<Rc<RefCell<TreeNode>>>,
-    pub right: Option<Rc<RefCell<TreeNode>>>,
-}
-
-impl TreeNode {
-    #[inline]
-    pub fn new(val: i32) -> Self {
-        TreeNode {
-            val,
-            left: None,
-            right: None,
-        }
-    }
-}
-
+use crate::utils::tree::TreeNode;
 use std::cell::RefCell;
 use std::collections::HashMap;
 use std::rc::Rc;
@@ -133,7 +115,7 @@ impl Solution {
 }
 
 pub fn run() {
-    let input = vec![
+    let input = [
         (vec![3, 1, 2, 4, 5, 7, 6], vec![6, 7, 5, 4, 2, 1, 3]),
         (vec![3, 9, 20, 15, 7], vec![9, 3, 15, 20, 7]),
         (vec![3, 20, 15, 4, 6, 7, 9], vec![3, 4, 15, 6, 20, 9, 7]),
@@ -143,14 +125,9 @@ pub fn run() {
             vec![1, 9, 6, 4, 8, 3, 15, 20, 7],
         ),
         (vec![-1], vec![-1]),
-        // [3,1,null,2,null,4,null,5,null,7,null,6]
-        // [3,9,20,null,null,15,7]
-        // [3,null,20,15,7,4,6,9]
-        // [3,9,20,1,null,15,7]
-        // [3,9,20,1,4,15,7,null,null,6,8]
     ];
 
     for (preorder, inorder) in input {
-        println!("{:?}", Solution::build_tree(preorder, inorder));
+        TreeNode::print(Solution::build_tree(preorder, inorder));
     }
 }

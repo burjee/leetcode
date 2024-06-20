@@ -55,7 +55,7 @@ impl Solution {
 }
 
 pub fn run() {
-    let input = vec![
+    let input = [
         (6, 8),
         (5, 8),
         (6, 7),
@@ -71,7 +71,8 @@ pub fn run() {
         (5, 5),
         (4, 5),
     ];
+
     for (m, n) in input {
-        println!("ans: {}", Solution::unique_paths(m, n));
+        println!("{}", Solution::unique_paths(m, n));
     }
 }

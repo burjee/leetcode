@@ -28,15 +28,16 @@ impl Solution {
 
 pub fn run() {
     let words = [
-        ("abc".to_string(), "bca".to_string()),
-        ("a".to_string(), "aa".to_string()),
-        ("cabbba".to_string(), "abbccc".to_string()),
-        (
-            "aaabbbbccddeeeeefffff".to_string(),
-            "aaaaabbcccdddeeeeffff".to_string(),
-        ),
+        ("abc", "bca"),
+        ("a", "aa"),
+        ("cabbba", "abbccc"),
+        ("aaabbbbccddeeeeefffff", "aaaaabbcccdddeeeeffff"),
     ];
+
     for (word1, word2) in words {
-        println!("{}", Solution::close_strings(word1, word2));
+        println!(
+            "{}",
+            Solution::close_strings(word1.to_string(), word2.to_string())
+        );
     }
 }
