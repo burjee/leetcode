@@ -117,11 +117,6 @@ pub fn run() {
 
     for (nums, k) in input {
         let head = ListNode::from_vec(nums);
-        println!(
-            "{:?}",
-            Solution::swap_nodes(head, k)
-                .unwrap_or(Box::new(ListNode::new(-1)))
-                .get_vec()
-        );
+        ListNode::print(Solution::swap_nodes(head, k));
     }
 }
