@@ -252,6 +252,8 @@ cargo run <problem_number>
 
 [1413](https://leetcode.com/problems/minimum-value-to-get-positive-step-by-step-sum) Minimum Value to Get Positive Step by Step Sum
 
+[1431](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies) Kids With the Greatest Number of Candies
+
 [1456](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length) Maximum Number of Vowels in a Substring of Given Length
 
 [1491](https://leetcode.com/problems/average-salary-excluding-the-minimum-and-maximum-salary) Average Salary Excluding the Minimum and Maximum Salary
