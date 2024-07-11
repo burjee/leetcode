@@ -242,6 +242,8 @@ cargo run <problem_number>
 
 [1048](https://leetcode.com/problems/longest-string-chain) Longest String Chain
 
+[1071](https://leetcode.com/problems/greatest-common-divisor-of-strings) Greatest Common Divisor of Strings
+
 [1091](https://leetcode.com/problems/shortest-path-in-binary-matrix) Shortest Path in Binary Matrix
 
 [1140](https://leetcode.com/problems/stone-game-ii) Stone Game II
