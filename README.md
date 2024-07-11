@@ -176,6 +176,8 @@ cargo run <problem_number>
 
 [338](https://leetcode.com/problems/counting-bits) Counting Bits
 
+[345](https://leetcode.com/problems/reverse-vowels-of-a-string) Reverse Vowels of a String
+
 [347](https://leetcode.com/problems/top-k-frequent-elements) Top K Frequent Elements
 
 [368](https://leetcode.com/problems/largest-divisible-subset) Largest Divisible Subset
