@@ -264,6 +264,8 @@ cargo run <problem_number>
 
 [1721](https://leetcode.com/problems/swapping-nodes-in-a-linked-list) Swapping Nodes in a Linked List
 
+[1768](https://leetcode.com/problems/merge-strings-alternately) Merge Strings Alternately
+
 [1822](https://leetcode.com/problems/sign-of-the-product-of-an-array) Sign of the Product of an Array
 
 [1834](https://leetcode.com/problems/single-threaded-cpu) Single-Threaded CPU
