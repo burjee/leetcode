@@ -204,6 +204,8 @@ cargo run <problem_number>
 
 [572](https://leetcode.com/problems/subtree-of-another-tree) Subtree of Another Tree
 
+[605](https://leetcode.com/problems/can-place-flowers) Can Place Flowers
+
 [623](https://leetcode.com/problems/add-one-row-to-tree) Add One Row to Tree
 
 [647](https://leetcode.com/problems/palindromic-substrings) Palindromic Substrings
