@@ -202,6 +202,8 @@ cargo run <problem_number>
 
 [441](https://leetcode.com/problems/arranging-coins) Arranging Coins
 
+[443](https://leetcode.com/problems/string-compression) String Compression
+
 [461](https://leetcode.com/problems/hamming-distance) Hamming Distance
 
 [506](https://leetcode.com/problems/relative-ranks) Relative Ranks
