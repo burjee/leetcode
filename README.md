@@ -176,6 +176,8 @@ cargo run <problem_number>
 
 [322](https://leetcode.com/problems/coin-change) Coin Change
 
+[334](https://leetcode.com/problems/increasing-triplet-subsequence) Increasing Triplet Subsequence
+
 [338](https://leetcode.com/problems/counting-bits) Counting Bits
 
 [345](https://leetcode.com/problems/reverse-vowels-of-a-string) Reverse Vowels of a String
