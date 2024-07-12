@@ -192,6 +192,8 @@ cargo run <problem_number>
 
 [380](https://leetcode.com/problems/insert-delete-getrandom-o1) Insert Delete GetRandom O(1)
 
+[392](https://leetcode.com/problems/is-subsequence) Is Subsequence
+
 [402](https://leetcode.com/problems/remove-k-digits) Remove K Digits
 
 [404](https://leetcode.com/problems/sum-of-left-leaves) Sum of Left Leaves
