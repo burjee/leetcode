@@ -164,6 +164,8 @@ cargo run <problem_number>
 
 [268](https://leetcode.com/problems/missing-number) Missing Number
 
+[283](https://leetcode.com/problems/move-zeroes) Move Zeroes
+
 [295](https://leetcode.com/problems/find-median-from-data-stream) Find Median from Data Stream
 
 [297](https://leetcode.com/problems/serialize-and-deserialize-binary-tree) Serialize and Deserialize Binary Tree
