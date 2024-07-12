@@ -114,6 +114,8 @@ cargo run <problem_number>
 
 [143](https://leetcode.com/problems/reorder-list) Reorder List
 
+[151](https://leetcode.com/problems/reverse-words-in-a-string) Reverse Words in a String
+
 [152](https://leetcode.com/problems/maximum-product-subarray) Maximum Product Subarray
 
 [153](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array) Find Minimum in Rotated Sorted Array
