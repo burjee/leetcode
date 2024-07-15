@@ -234,6 +234,8 @@ cargo run <problem_number>
 
 [705](https://leetcode.com/problems/design-hashset) Design HashSet
 
+[724](https://leetcode.com/problems/find-pivot-index) Find Pivot Index
+
 [785](https://leetcode.com/problems/is-graph-bipartite) Is Graph Bipartite
 
 [797](https://leetcode.com/problems/all-paths-from-source-to-target) All Paths From Source to Target
