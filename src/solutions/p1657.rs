@@ -27,14 +27,14 @@ impl Solution {
 }
 
 pub fn run() {
-    let words = [
+    let input = [
         ("abc", "bca"),
         ("a", "aa"),
         ("cabbba", "abbccc"),
         ("aaabbbbccddeeeeefffff", "aaaaabbcccdddeeeeffff"),
     ];
 
-    for (word1, word2) in words {
+    for (word1, word2) in input {
         println!(
             "{}",
             Solution::close_strings(word1.to_string(), word2.to_string())

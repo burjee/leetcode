@@ -280,6 +280,8 @@ cargo run <problem_number>
 
 [1657](https://leetcode.com/problems/determine-if-two-strings-are-close) Determine if Two Strings Are Close
 
+[1679](https://leetcode.com/problems/max-number-of-k-sum-pairs) Max Number of K-Sum Pairs
+
 [1721](https://leetcode.com/problems/swapping-nodes-in-a-linked-list) Swapping Nodes in a Linked List
 
 [1768](https://leetcode.com/problems/merge-strings-alternately) Merge Strings Alternately
