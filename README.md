@@ -308,6 +308,8 @@ cargo run <problem_number>
 
 [2336](https://leetcode.com/problems/smallest-number-in-infinite-set) Smallest Number in Infinite Set
 
+[2352](https://leetcode.com/problems/equal-row-and-column-pairs) Equal Row and Column Pairs
+
 [2542](https://leetcode.com/problems/maximum-subsequence-score) Maximum Subsequence Score
 
 [3075](https://leetcode.com/problems/maximize-happiness-of-selected-children) Maximize Happiness of Selected Children
