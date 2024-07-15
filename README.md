@@ -268,6 +268,8 @@ cargo run <problem_number>
 
 [1140](https://leetcode.com/problems/stone-game-ii) Stone Game II
 
+[1207](https://leetcode.com/problems/unique-number-of-occurrences) Unique Number of Occurrences
+
 [1396](https://leetcode.com/problems/design-underground-system) Design Underground System
 
 [1413](https://leetcode.com/problems/minimum-value-to-get-positive-step-by-step-sum) Minimum Value to Get Positive Step by Step Sum
