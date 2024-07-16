@@ -312,6 +312,8 @@ cargo run <problem_number>
 
 [2352](https://leetcode.com/problems/equal-row-and-column-pairs) Equal Row and Column Pairs
 
+[2390](https://leetcode.com/problems/removing-stars-from-a-string) Removing Stars From a String
+
 [2542](https://leetcode.com/problems/maximum-subsequence-score) Maximum Subsequence Score
 
 [3075](https://leetcode.com/problems/maximize-happiness-of-selected-children) Maximize Happiness of Selected Children
