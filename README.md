@@ -236,6 +236,8 @@ cargo run <problem_number>
 
 [724](https://leetcode.com/problems/find-pivot-index) Find Pivot Index
 
+[735](https://leetcode.com/problems/asteroid-collision) Asteroid Collision
+
 [785](https://leetcode.com/problems/is-graph-bipartite) Is Graph Bipartite
 
 [797](https://leetcode.com/problems/all-paths-from-source-to-target) All Paths From Source to Target
