@@ -104,6 +104,7 @@ pub mod p371;
 pub mod p380;
 pub mod p39;
 pub mod p392;
+pub mod p394;
 pub mod p402;
 pub mod p404;
 pub mod p417;
@@ -254,6 +255,7 @@ pub fn run(n: &str) {
         "371" => p371::run(),
         "380" => p380::run(),
         "392" => p392::run(),
+        "394" => p394::run(),
         "402" => p402::run(),
         "404" => p404::run(),
         "417" => p417::run(),

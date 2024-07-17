@@ -194,6 +194,8 @@ cargo run <problem_number>
 
 [392](https://leetcode.com/problems/is-subsequence) Is Subsequence
 
+[394](https://leetcode.com/problems/decode-string) Decode String
+
 [402](https://leetcode.com/problems/remove-k-digits) Remove K Digits
 
 [404](https://leetcode.com/problems/sum-of-left-leaves) Sum of Left Leaves
