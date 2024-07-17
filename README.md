@@ -308,6 +308,8 @@ cargo run <problem_number>
 
 [1834](https://leetcode.com/problems/single-threaded-cpu) Single-Threaded CPU
 
+[2095](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list) Delete the Middle Node of a Linked List
+
 [2130](https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list) Maximum Twin Sum of a Linked List
 
 [2140](https://leetcode.com/problems/solving-questions-with-brainpower) Solving Questions With Brainpower
