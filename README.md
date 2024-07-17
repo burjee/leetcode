@@ -252,6 +252,8 @@ cargo run <problem_number>
 
 [931](https://leetcode.com/problems/minimum-falling-path-sum) Minimum Falling Path Sum
 
+[933](https://leetcode.com/problems/number-of-recent-calls) Number of Recent Calls
+
 [938](https://leetcode.com/problems/range-sum-of-bst) Range Sum of BST
 
 [980](https://leetcode.com/problems/unique-paths-iii) Unique Paths III
