@@ -154,6 +154,8 @@ cargo run <problem_number>
 
 [235](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree) Lowest Common Ancestor of a Binary Search Tree
 
+[236](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree) Lowest Common Ancestor of a Binary Tree
+
 [238](https://leetcode.com/problems/product-of-array-except-self) Product of Array Except Self
 
 [242](https://leetcode.com/problems/valid-anagram) Valid Anagram
