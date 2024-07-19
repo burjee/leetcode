@@ -178,6 +178,8 @@ cargo run <problem_number>
 
 [322](https://leetcode.com/problems/coin-change) Coin Change
 
+[328](https://leetcode.com/problems/odd-even-linked-list) Odd Even Linked List
+
 [334](https://leetcode.com/problems/increasing-triplet-subsequence) Increasing Triplet Subsequence
 
 [338](https://leetcode.com/problems/counting-bits) Counting Bits
