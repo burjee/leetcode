@@ -280,6 +280,8 @@ cargo run <problem_number>
 
 [1207](https://leetcode.com/problems/unique-number-of-occurrences) Unique Number of Occurrences
 
+[1372](https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree) Longest ZigZag Path in a Binary Tree
+
 [1396](https://leetcode.com/problems/design-underground-system) Design Underground System
 
 [1413](https://leetcode.com/problems/minimum-value-to-get-positive-step-by-step-sum) Minimum Value to Get Positive Step by Step Sum
