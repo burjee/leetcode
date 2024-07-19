@@ -284,6 +284,8 @@ cargo run <problem_number>
 
 [1431](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies) Kids With the Greatest Number of Candies
 
+[1448](https://leetcode.com/problems/count-good-nodes-in-binary-tree) Count Good Nodes in Binary Tree
+
 [1456](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length) Maximum Number of Vowels in a Substring of Given Length
 
 [1491](https://leetcode.com/problems/average-salary-excluding-the-minimum-and-maximum-salary) Average Salary Excluding the Minimum and Maximum Salary
