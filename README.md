@@ -208,6 +208,8 @@ cargo run <problem_number>
 
 [435](https://leetcode.com/problems/non-overlapping-intervals) Non-overlapping Intervals
 
+[437](https://leetcode.com/problems/path-sum-iii) Path Sum III
+
 [441](https://leetcode.com/problems/arranging-coins) Arranging Coins
 
 [443](https://leetcode.com/problems/string-compression) String Compression
