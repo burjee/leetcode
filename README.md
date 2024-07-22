@@ -240,6 +240,8 @@ cargo run <problem_number>
 
 [692](https://leetcode.com/problems/top-k-frequent-words) Top K Frequent Words
 
+[700](https://leetcode.com/problems/search-in-a-binary-search-tree) Search in a Binary Search Tree
+
 [703](https://leetcode.com/problems/kth-largest-element-in-a-stream) Kth Largest Element in a Stream
 
 [705](https://leetcode.com/problems/design-hashset) Design HashSet
