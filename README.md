@@ -282,6 +282,8 @@ cargo run <problem_number>
 
 [1140](https://leetcode.com/problems/stone-game-ii) Stone Game II
 
+[1161](https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree) Maximum Level Sum of a Binary Tree
+
 [1207](https://leetcode.com/problems/unique-number-of-occurrences) Unique Number of Occurrences
 
 [1372](https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree) Longest ZigZag Path in a Binary Tree
