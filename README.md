@@ -218,6 +218,8 @@ cargo run <problem_number>
 
 [443](https://leetcode.com/problems/string-compression) String Compression
 
+[450](https://leetcode.com/problems/delete-node-in-a-bst) Delete Node in a BST
+
 [461](https://leetcode.com/problems/hamming-distance) Hamming Distance
 
 [506](https://leetcode.com/problems/relative-ranks) Relative Ranks
