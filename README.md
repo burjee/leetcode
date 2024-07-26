@@ -226,6 +226,8 @@ cargo run <problem_number>
 
 [540](https://leetcode.com/problems/single-element-in-a-sorted-array) Single Element in a Sorted Array
 
+[547](https://leetcode.com/problems/number-of-provinces) Number of Provinces
+
 [572](https://leetcode.com/problems/subtree-of-another-tree) Subtree of Another Tree
 
 [605](https://leetcode.com/problems/can-place-flowers) Can Place Flowers

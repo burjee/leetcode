@@ -129,6 +129,7 @@ pub mod p506;
 pub mod p53;
 pub mod p54;
 pub mod p540;
+pub mod p547;
 pub mod p55;
 pub mod p56;
 pub mod p57;
@@ -283,6 +284,7 @@ pub fn run(n: &str) {
         "461" => p461::run(),
         "506" => p506::run(),
         "540" => p540::run(),
+        "547" => p547::run(),
         "572" => p572::run(),
         "605" => p605::run(),
         "623" => p623::run(),
