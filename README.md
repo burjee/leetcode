@@ -260,6 +260,8 @@ cargo run <problem_number>
 
 [839](https://leetcode.com/problems/similar-string-groups) Similar String Groups
 
+[841](https://leetcode.com/problems/keys-and-rooms) Keys and Rooms
+
 [872](https://leetcode.com/problems/leaf-similar-trees) Leaf-Similar Trees
 
 [931](https://leetcode.com/problems/minimum-falling-path-sum) Minimum Falling Path Sum
