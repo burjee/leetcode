@@ -354,6 +354,8 @@ cargo run <problem_number>
 
 [2390](https://leetcode.com/problems/removing-stars-from-a-string) Removing Stars From a String
 
+[2462](https://leetcode.com/problems/total-cost-to-hire-k-workers) Total Cost to Hire K Workers
+
 [2542](https://leetcode.com/problems/maximum-subsequence-score) Maximum Subsequence Score
 
 [3075](https://leetcode.com/problems/maximize-happiness-of-selected-children) Maximize Happiness of Selected Children
