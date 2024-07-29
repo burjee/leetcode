@@ -148,6 +148,8 @@ cargo run <problem_number>
 
 [213](https://leetcode.com/problems/house-robber-ii) House Robber II
 
+[215](https://leetcode.com/problems/kth-largest-element-in-an-array) Kth Largest Element in an Array
+
 [217](https://leetcode.com/problems/contains-duplicate) Contains Duplicate
 
 [226](https://leetcode.com/problems/invert-binary-tree) Invert Binary Tree
