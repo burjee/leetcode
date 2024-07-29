@@ -198,6 +198,8 @@ cargo run <problem_number>
 
 [371](https://leetcode.com/problems/sum-of-two-integers) Sum of Two Integers
 
+[374](https://leetcode.com/problems/guess-number-higher-or-lower) Guess Number Higher or Lower
+
 [380](https://leetcode.com/problems/insert-delete-getrandom-o1) Insert Delete GetRandom O(1)
 
 [392](https://leetcode.com/problems/is-subsequence) Is Subsequence
