@@ -173,6 +173,7 @@ pub mod p938;
 pub mod p96;
 pub mod p98;
 pub mod p980;
+pub mod p994;
 
 pub fn run(n: &str) {
     match n {
@@ -312,6 +313,7 @@ pub fn run(n: &str) {
         "933" => p933::run(),
         "938" => p938::run(),
         "980" => p980::run(),
+        "994" => p994::run(),
         "1004" => p1004::run(),
         "1026" => p1026::run(),
         "1035" => p1035::run(),

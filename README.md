@@ -276,6 +276,8 @@ cargo run <problem_number>
 
 [980](https://leetcode.com/problems/unique-paths-iii) Unique Paths III
 
+[994](https://leetcode.com/problems/rotting-oranges) Rotting Oranges
+
 [1004](https://leetcode.com/problems/max-consecutive-ones-iii) Max Consecutive Ones III
 
 [1026](https://leetcode.com/problems/maximum-difference-between-node-and-ancestor) Maximum Difference Between Node and Ancestor
