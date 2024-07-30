@@ -350,6 +350,8 @@ cargo run <problem_number>
 
 [2215](https://leetcode.com/problems/find-the-difference-of-two-arrays) Find the Difference of Two Arrays
 
+[2300](https://leetcode.com/problems/successful-pairs-of-spells-and-potions) Successful Pairs of Spells and Potions
+
 [2336](https://leetcode.com/problems/smallest-number-in-infinite-set) Smallest Number in Infinite Set
 
 [2352](https://leetcode.com/problems/equal-row-and-column-pairs) Equal Row and Column Pairs
