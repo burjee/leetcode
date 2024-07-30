@@ -120,6 +120,8 @@ cargo run <problem_number>
 
 [153](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array) Find Minimum in Rotated Sorted Array
 
+[162](https://leetcode.com/problems/find-peak-element) Find Peak Element
+
 [168](https://leetcode.com/problems/excel-sheet-column-title) Excel Sheet Column Title
 
 [190](https://leetcode.com/problems/reverse-bits) Reverse Bits
