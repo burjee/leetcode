@@ -13,6 +13,7 @@ pub mod p105;
 pub mod p1071;
 pub mod p1091;
 pub mod p11;
+pub mod p1137;
 pub mod p1140;
 pub mod p1161;
 pub mod p1207;
@@ -333,6 +334,7 @@ pub fn run(n: &str) {
         "1048" => p1048::run(),
         "1071" => p1071::run(),
         "1091" => p1091::run(),
+        "1137" => p1137::run(),
         "1140" => p1140::run(),
         "1161" => p1161::run(),
         "1207" => p1207::run(),

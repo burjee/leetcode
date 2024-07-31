@@ -302,6 +302,8 @@ cargo run <problem_number>
 
 [1091](https://leetcode.com/problems/shortest-path-in-binary-matrix) Shortest Path in Binary Matrix
 
+[1137](https://leetcode.com/problems/n-th-tribonacci-number) N-th Tribonacci Number
+
 [1140](https://leetcode.com/problems/stone-game-ii) Stone Game II
 
 [1161](https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree) Maximum Level Sum of a Binary Tree
