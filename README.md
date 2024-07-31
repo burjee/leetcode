@@ -264,6 +264,8 @@ cargo run <problem_number>
 
 [735](https://leetcode.com/problems/asteroid-collision) Asteroid Collision
 
+[746](https://leetcode.com/problems/min-cost-climbing-stairs) Min Cost Climbing Stairs
+
 [785](https://leetcode.com/problems/is-graph-bipartite) Is Graph Bipartite
 
 [797](https://leetcode.com/problems/all-paths-from-source-to-target) All Paths From Source to Target
