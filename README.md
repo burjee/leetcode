@@ -274,6 +274,8 @@ cargo run <problem_number>
 
 [872](https://leetcode.com/problems/leaf-similar-trees) Leaf-Similar Trees
 
+[875](https://leetcode.com/problems/koko-eating-bananas) Koko Eating Bananas
+
 [931](https://leetcode.com/problems/minimum-falling-path-sum) Minimum Falling Path Sum
 
 [933](https://leetcode.com/problems/number-of-recent-calls) Number of Recent Calls
