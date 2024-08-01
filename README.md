@@ -268,6 +268,8 @@ cargo run <problem_number>
 
 [785](https://leetcode.com/problems/is-graph-bipartite) Is Graph Bipartite
 
+[790](https://leetcode.com/problems/domino-and-tromino-tiling) Domino and Tromino Tiling
+
 [797](https://leetcode.com/problems/all-paths-from-source-to-target) All Paths From Source to Target
 
 [837](https://leetcode.com/problems/new-21-game) New 21 Game
