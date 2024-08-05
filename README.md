@@ -260,6 +260,8 @@ cargo run <problem_number>
 
 [705](https://leetcode.com/problems/design-hashset) Design HashSet
 
+[714](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee) Best Time to Buy and Sell Stock with Transaction Fee
+
 [724](https://leetcode.com/problems/find-pivot-index) Find Pivot Index
 
 [735](https://leetcode.com/problems/asteroid-collision) Asteroid Collision
