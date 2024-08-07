@@ -66,6 +66,8 @@ cargo run <problem_number>
 
 [70](https://leetcode.com/problems/climbing-stairs) Climbing Stairs
 
+[72](https://leetcode.com/problems/edit-distance) Edit Distance
+
 [73](https://leetcode.com/problems/set-matrix-zeroes) Set Matrix Zeroes
 
 [76](https://leetcode.com/problems/minimum-window-substring) Minimum Window Substring
