@@ -290,6 +290,8 @@ cargo run <problem_number>
 
 [875](https://leetcode.com/problems/koko-eating-bananas) Koko Eating Bananas
 
+[901](https://leetcode.com/problems/online-stock-span) Online Stock Span
+
 [931](https://leetcode.com/problems/minimum-falling-path-sum) Minimum Falling Path Sum
 
 [933](https://leetcode.com/problems/number-of-recent-calls) Number of Recent Calls
