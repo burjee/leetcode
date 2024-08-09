@@ -320,6 +320,8 @@ cargo run <problem_number>
 
 [1207](https://leetcode.com/problems/unique-number-of-occurrences) Unique Number of Occurrences
 
+[1268](https://leetcode.com/problems/search-suggestions-system) Search Suggestions System
+
 [1318](https://leetcode.com/problems/minimum-flips-to-make-a-or-b-equal-to-c) Minimum Flips to Make a OR b Equal to c
 
 [1372](https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree) Longest ZigZag Path in a Binary Tree
