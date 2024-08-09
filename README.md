@@ -232,6 +232,8 @@ cargo run <problem_number>
 
 [450](https://leetcode.com/problems/delete-node-in-a-bst) Delete Node in a BST
 
+[452](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons) Minimum Number of Arrows to Burst Balloons
+
 [461](https://leetcode.com/problems/hamming-distance) Hamming Distance
 
 [506](https://leetcode.com/problems/relative-ranks) Relative Ranks
