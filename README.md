@@ -270,6 +270,8 @@ cargo run <problem_number>
 
 [735](https://leetcode.com/problems/asteroid-collision) Asteroid Collision
 
+[739](https://leetcode.com/problems/daily-temperatures) Daily Temperatures
+
 [746](https://leetcode.com/problems/min-cost-climbing-stairs) Min Cost Climbing Stairs
 
 [785](https://leetcode.com/problems/is-graph-bipartite) Is Graph Bipartite
