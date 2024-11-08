@@ -12,7 +12,7 @@ impl Solution {
         let mut p1 = odd_head.as_mut();
         let mut p2 = even_head.as_mut();
         while let Some(node2) = p2 {
-            let mut node1 = p1.unwrap();
+            let node1 = p1.unwrap();
             node1.next = node2.next.take();
             p1 = Some(node2);
             p2 = node1.next.as_mut();

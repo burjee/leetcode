@@ -19,7 +19,7 @@ impl Solution {
         for _ in 0..c - 1 {
             p = p.unwrap().next.as_mut();
         }
-        let mut node = p.unwrap();
+        let node = p.unwrap();
         node.next = node.next.take().unwrap().next;
 
         head
