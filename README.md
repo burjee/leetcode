@@ -128,6 +128,8 @@ cargo run <problem_number>
 
 [168](https://leetcode.com/problems/excel-sheet-column-title) Excel Sheet Column Title
 
+[169](https://leetcode.com/problems/majority-element) Majority Element
+
 [190](https://leetcode.com/problems/reverse-bits) Reverse Bits
 
 [191](https://leetcode.com/problems/number-of-1-bits) Number of 1 Bits
