@@ -130,6 +130,8 @@ cargo run <problem_number>
 
 [169](https://leetcode.com/problems/majority-element) Majority Element
 
+[189](https://leetcode.com/problems/rotate-array) Rotate Array
+
 [190](https://leetcode.com/problems/reverse-bits) Reverse Bits
 
 [191](https://leetcode.com/problems/number-of-1-bits) Number of 1 Bits
