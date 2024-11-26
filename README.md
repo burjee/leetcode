@@ -116,6 +116,8 @@ cargo run <problem_number>
 
 [134](https://leetcode.com/problems/gas-station) Gas Station
 
+[135](https://leetcode.com/problems/candy) Candy
+
 [136](https://leetcode.com/problems/single-number) Single Number
 
 [139](https://leetcode.com/problems/word-break) Word Break
