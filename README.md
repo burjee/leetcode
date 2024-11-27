@@ -42,6 +42,8 @@ cargo run <problem_number>
 
 [39](https://leetcode.com/problems/combination-sum) Combination Sum
 
+[42](https://leetcode.com/problems/trapping-rain-water) Trapping Rain Water
+
 [45](https://leetcode.com/problems/jump-game-ii) Jump Game II
 
 [48](https://leetcode.com/problems/rotate-image) Rotate Image
