@@ -12,6 +12,8 @@ cargo run <problem_number>
 
 [5](https://leetcode.com/problems/longest-palindromic-substring) Longest Palindromic Substring
 
+[6](https://leetcode.com/problems/zigzag-conversion) Zigzag Conversion
+
 [9](https://leetcode.com/problems/palindrome-number) Palindrome Number
 
 [11](https://leetcode.com/problems/container-with-most-water) Container With Most Water
