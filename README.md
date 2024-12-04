@@ -74,6 +74,8 @@ cargo run <problem_number>
 
 [67](https://leetcode.com/problems/add-binary) Add Binary
 
+[68](https://leetcode.com/problems/text-justification) Text Justification
+
 [70](https://leetcode.com/problems/climbing-stairs) Climbing Stairs
 
 [72](https://leetcode.com/problems/edit-distance) Edit Distance
